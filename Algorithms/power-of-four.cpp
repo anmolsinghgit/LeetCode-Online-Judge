@@ -11,6 +11,7 @@ public:
 };
 int main(int argc, char** argv) {
 	Solution solution;
+	cout << "Passed!\n";
 	getchar();
 	return 0;
 }
