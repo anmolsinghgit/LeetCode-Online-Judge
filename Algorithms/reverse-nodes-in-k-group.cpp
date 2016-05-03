@@ -15,9 +15,9 @@ public:
 		if (length < k) return head;
 		ListNode dummy(-1);
 		dummy.next = head;
-		ListNode* tail = this->reverse(&dummy, k);
+		ListNode* tail = this->next(&dummy, k);
 		while(tail) {
-			tail = this->reverse(tail, k);
+			tail = this->next(tail, k);
 		}
 		return dummy.next;
 	}
@@ -32,7 +32,7 @@ private:
 		return result;
 	}
 private:
-	ListNode* reverse(ListNode* previous_start, const int& k) {
+	ListNode* next(ListNode* previous_start, const int& k) {
 		if (this->length(previous_start->next) < k) return NULL;
 		ListNode* previous = previous_start;
 		ListNode* current = previous->next;
