@@ -20,7 +20,6 @@ public:
 };
 int main(void) {
 	Solution solution;
-
 	vector<int> nums = { 1,3,5,6 };
 	//int target = 5;
 	//int target = 2;
