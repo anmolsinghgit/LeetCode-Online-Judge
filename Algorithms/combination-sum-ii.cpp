@@ -15,7 +15,7 @@ public:
 		if (target < candidates.front())
 			return result;
 		auto lb = lower_bound(begin(candidates), end(candidates), target);
-		if (*lb == target)
+		if (lb < end(candidates) && *lb == target)
 			result = {{target}};
 		for (auto it = begin(candidates); it < lb; ++it) {
 			vector<int> t(begin(candidates), end(candidates));
