@@ -7,7 +7,7 @@
 using namespace std;
 class Solution {
 public:
-	vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+	vector<vector<int>> combinationSum(vector<int>& candidates, const int& target) {
 		vector<vector<int>> result;
 		if (target <= 0 || candidates.empty())
 			return result;
@@ -44,13 +44,18 @@ int main(void) {
 
 	vector<int> candidates = {4, 5, 2};
 	int target = 16;	
-	
+	cout << '[';
 	for (const auto& i : solution.combinationSum(candidates, target)) {
-		for (const auto& j : i) {
+		cout << '\n';
+		cout << '\t';
+		cout << '[';
+		cout << '\t';
+		for (const auto& j : i)
 			cout << j << '\t';
-		}
+		cout << ']';
 		cout << '\n';
 	}
+	cout << ']';
 	cout << "\nPassed\n";
 	getchar();
 	return 0;
