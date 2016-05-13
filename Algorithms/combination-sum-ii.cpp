@@ -7,19 +7,19 @@
 using namespace std;
 class Solution {
 public:
-	vector<vector<int>> combinationSum2(vector<int>& v, const int& target) {
+	vector<vector<int>> combinationSum2(vector<int>& candidates, const int& target) {
 		vector<vector<int>> result;
-		if (target <= 0 || v.empty())
+		if (target <= 0 || candidates.empty())
 			return result;
-		sort(begin(v), end(v));
-		if (target < v.front())
+		sort(begin(candidates), end(candidates));
+		if (target < candidates.front())
 			return result;
-		auto lb = lower_bound(begin(v), end(v), target);
+		auto lb = lower_bound(begin(candidates), end(candidates), target);
 		if (*lb == target)
 			result = {{target}};
-		for (auto it = begin(v); it < lb; ++it) {
-			vector<int> t(begin(v), end(v));
-			t.erase(begin(t) + distance(begin(v), it));
+		for (auto it = begin(candidates); it < lb; ++it) {
+			vector<int> t(begin(candidates), end(candidates));
+			t.erase(begin(t) + distance(begin(candidates), it));
 			vector<vector<int>> x = this->combinationSum2(t, target - *it);
 			if (x.empty())
 				continue;
@@ -39,10 +39,10 @@ public:
 };
 int main(void) {
 	Solution solution;
-	vector<int> v = {10,1,2,7,6,1,5};
+	vector<int> candidates = {10,1,2,7,6,1,5};
 	int target = 8;
 	cout << '[';
-	for (const auto& i : solution.combinationSum2(v, target)) {
+	for (const auto& i : solution.combinationSum2(candidates, target)) {
 		cout << '\n';
 		cout << '\t';
 		cout << '[';
