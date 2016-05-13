@@ -15,6 +15,7 @@
 | 34 | [Search for a Range](https://leetcode.com/problems/search-for-a-range/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/search-for-a-range.cpp) | Medium |
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/search-insert-position.cpp) | Medium |
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/combination-sum.cpp) | Medium |
+| 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/combination-sum-ii.cpp) | Medium |
 | 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/remove-duplicates-from-sorted-list-ii.cpp) | Medium |
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/remove-duplicates-from-sorted-list.cpp) | Easy |
 | 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/reverse-linked-list-ii.cpp) | Medium |
