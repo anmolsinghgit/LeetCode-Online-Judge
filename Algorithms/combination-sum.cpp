@@ -24,8 +24,8 @@ public:
 				continue;
 			else {
 				for (auto& i : v) {
-					i.push_back(*it);
-					sort(begin(i), end(i));
+					auto pos = lower_bound(begin(i), end(i), *it);
+					i.insert(pos, *it);
 					if (find(begin(result), end(result), i) == end(result))
 						result.push_back(i);
 					else
