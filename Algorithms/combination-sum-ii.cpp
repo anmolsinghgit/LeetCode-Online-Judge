@@ -14,6 +14,7 @@ public:
 		this->combinationSum2(0, path, target, result, candidates);
 		return result;
 	}
+private:
 	void combinationSum2(int start, vector<int>& path, int target, vector<vector<int>>& result, const vector<int>& candidates) {
 		if (target < 0) 
 			return;
