@@ -8,32 +8,32 @@ using namespace std;
 class Solution {
 public:
 	vector<vector<int>> combinationSum(vector<int>& candidates, const int& target) {
-		vector<vector<int>> result;
-		if (target <= 0 || candidates.empty())
-			return result;
 		sort(begin(candidates), end(candidates));
-		if (target < candidates.front())
-			return result;
-		auto lb = lower_bound(begin(candidates), end(candidates), target);
-		if (lb < end(candidates) && *lb == target) {
-			result = {{target}};
-		}
-		for (auto it = begin(candidates); it < lb; ++it) {
-			vector<vector<int>> v = this->combinationSum(candidates, target - *it);
-			if (v.empty()) 
-				continue;
+		vector<vector<int>> result;
+		vector<int> path; 
+		this->combinationSum(result, 0, path, target, candidates);
+		return result;
+	}
+private:
+	void combinationSum(vector<vector<int>>& result, const int& start, vector<int>& path, const int& target, const vector<int>& candidates) {
+		if (target < 0)
+			return;
+		else if (target == 0) {
+			if (path.empty())
+				return;
 			else {
-				for (auto& i : v) {
-					auto pos = lower_bound(begin(i), end(i), *it);
-					i.insert(pos, *it);
-					if (find(begin(result), end(result), i) == end(result))
-						result.push_back(i);
-					else
-						continue;
-				}
+				result.push_back(path);
+				return;
 			}
 		}
-		return result;
+		else {
+			for (int i = start; i < candidates.size(); i++) {
+				path.push_back(candidates[i]);
+				this->combinationSum(result, i, path, target - candidates[i], candidates);
+				path.pop_back();
+			}
+			return;
+		}
 	}
 };
 int main(void) {
@@ -57,6 +57,5 @@ int main(void) {
 	}
 	cout << ']';
 	cout << "\nPassed\n";
-	getchar();
 	return 0;
 }
