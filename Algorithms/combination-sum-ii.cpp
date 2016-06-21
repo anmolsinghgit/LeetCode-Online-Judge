@@ -11,11 +11,11 @@ public:
 		vector<vector<int>> result;
 		sort(begin(candidates), end(candidates));
 		vector<int> path;
-		this->combinationSum2(0, path, target, result, candidates);
+		this->combinationSum2(result, 0, path, target, candidates);
 		return result;
 	}
 private:
-	void combinationSum2(int start, vector<int>& path, int target, vector<vector<int>>& result, const vector<int>& candidates) {
+	void combinationSum2(vector<vector<int>>& result, const int& start, vector<int>& path, const int& target, const vector<int>& candidates) {
 		if (target < 0) 
 			return;
 		else if (target == 0) {
@@ -31,7 +31,7 @@ private:
 				if (i > start && candidates[i] == candidates[i - 1])
 					continue;
 				path.push_back(candidates[i]);
-				this->combinationSum2(i + 1, path, target - candidates[i], result, candidates);
+				this->combinationSum2(result, i + 1, path, target - candidates[i], candidates);
 				path.pop_back();
 			}
 			return;
