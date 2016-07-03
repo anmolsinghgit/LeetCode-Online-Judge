@@ -1,3 +1,6 @@
+// 44. Wildcard Matching
+// https://leetcode.com/problems/wildcard-matching/
+// https://discuss.leetcode.com/topic/3040/linear-runtime-and-constant-space-solution
 #include <iostream>
 #include <vector>
 #include <string>
