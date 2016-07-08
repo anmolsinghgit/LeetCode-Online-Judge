@@ -21,6 +21,7 @@
 | 43 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/multiply-strings.cpp) | Medium |
 | 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/wildcard-matching.cpp) | Hard |
 | 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/jump-game-ii.cpp) | Hard |
+| 51 | [N-Queens](https://leetcode.com/problems/n-queens/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/n-queens.cpp) | Hard |
 | 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/remove-duplicates-from-sorted-list-ii.cpp) | Medium |
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/remove-duplicates-from-sorted-list.cpp) | Easy |
 | 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/reverse-linked-list-ii.cpp) | Medium |
