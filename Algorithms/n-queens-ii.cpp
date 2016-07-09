@@ -47,7 +47,7 @@ int main(void) {
 	a.push_back(2);
 	b.push_back(0);
 	for (int i(0); i < b.size(); ++i) {
-		if (b[i] ^ a[i]) {
+		if (b[i] ^ solution.totalNQueens(a[i])) {
 			cout << "\nError\n";
 			getchar();
 			return 0;
