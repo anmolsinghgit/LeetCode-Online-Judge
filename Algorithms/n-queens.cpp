@@ -26,6 +26,7 @@ private:
 					solution[row][i] = '.';
 				}
 			}
+			return;
 		}
 	}
 private:
