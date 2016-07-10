@@ -30,6 +30,7 @@ private:
 				intervals[i].end = max(intervals[i].end, intervals[i + 1].end);
 				intervals.erase(begin(intervals) + i + 1);
 				this->merge(i, intervals);
+				return;
 			}
 			else {
 				this->merge(i + 1, intervals);
