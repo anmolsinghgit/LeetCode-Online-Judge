@@ -28,6 +28,7 @@
 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/merge-intervals.cpp) | Hard |
 | 57 | [Insert Interval](https://leetcode.com/problems/insert-interval/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/insert-interval.cpp) | Hard |
 | 59 | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/spiral-matrix-ii.cpp) | Medium |
+| 62 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/unique-paths.cpp) | Medium |
 | 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/remove-duplicates-from-sorted-list-ii.cpp) | Medium |
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/remove-duplicates-from-sorted-list.cpp) | Easy |
 | 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/reverse-linked-list-ii.cpp) | Medium |
