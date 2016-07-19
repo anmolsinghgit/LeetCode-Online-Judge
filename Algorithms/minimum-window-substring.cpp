@@ -1,3 +1,6 @@
+// 76. Minimum Window Substring
+// https://leetcode.com/problems/minimum-window-substring/
+// https://github.com/soulmachine/leetcode
 #include <iostream>
 #include <vector>
 #include <string>
