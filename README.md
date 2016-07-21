@@ -12,6 +12,7 @@
 | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/divide-two-integers.cpp) | Medium |
 | 30 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/substring-with-concatenation-of-all-words.cpp) | Hard |
 | 32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/longest-valid-parentheses.cpp) | Hard |
+| 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/search-in-rotated-sorted-array.cpp) | Hard |
 | 34 | [Search for a Range](https://leetcode.com/problems/search-for-a-range/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/search-for-a-range.cpp) | Medium |
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/search-insert-position.cpp) | Medium |
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/combination-sum.cpp) | Medium |
