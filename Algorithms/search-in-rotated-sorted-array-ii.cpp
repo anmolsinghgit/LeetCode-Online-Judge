@@ -1,3 +1,6 @@
+// 81. Search in Rotated Sorted Array II
+// https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
+// https://github.com/soulmachine/leetcode
 #include <iostream>
 #include <vector>
 using namespace std;
