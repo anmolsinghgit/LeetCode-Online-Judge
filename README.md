@@ -43,6 +43,7 @@
 | 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/remove-duplicates-from-sorted-list-ii.cpp) | Medium |
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/remove-duplicates-from-sorted-list.cpp) | Easy |
 | 84 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/largest-rectangle-in-histogram.cpp) | Hard |
+| 85 | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/maximal-rectangle.cpp) | Hard |
 | 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/reverse-linked-list-ii.cpp) | Medium |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/reverse-linked-list.cpp) | Easy |
 | 231 | [Power of Two](https://leetcode.com/problems/power-of-two/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/power-of-two.cpp) | Easy |
