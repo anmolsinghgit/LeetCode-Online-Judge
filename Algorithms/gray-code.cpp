@@ -1,5 +1,6 @@
 // 89. Gray Code
 // https://leetcode.com/problems/gray-code/
+// https://github.com/soulmachine/leetcode
 // https://discuss.leetcode.com/topic/8557/an-accepted-three-line-solution-in-java
 // https://en.wikipedia.org/wiki/Gray_code
 #include <iostream>
