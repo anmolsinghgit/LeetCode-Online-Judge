@@ -2,6 +2,7 @@
 // https://leetcode.com/problems/decode-ways/
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 class Solution {
 public:
@@ -56,8 +57,57 @@ int main(void) {
 		cout << "\nError\n";
 		return 0;
 	}
+	s = "27";
+	if (solution.numDecodings(s) == 1) {
+		cout << "\nPassed\n";
+	}
+	else {
+		cout << "\nError\n";
+		return 0;
+	}
+	s = "00";
+	if (solution.numDecodings(s) == 0) {
+		cout << "\nPassed\n";
+	}
+	else {
+		cout << "\nError\n";
+		return 0;
+	}
+	s = "01";
+	if (solution.numDecodings(s) == 0) {
+		cout << "\nPassed\n";
+	}
+	else {
+		cout << solution.numDecodings(s) << '\n';
+		cout << "\nError\n";
+		return 0;
+	}
+	s = "012";
+	if (solution.numDecodings(s) == 0) {
+		cout << "\nPassed\n";
+	}
+	else {
+		cout << "\nError\n";
+		return 0;
+	}
 	s = "111";
 	if (solution.numDecodings(s) == 3) {
+		cout << "\nPassed\n";
+	}
+	else {
+		cout << "\nError\n";
+		return 0;
+	}
+	s = "230";
+	if (solution.numDecodings(s) == 0) {
+		cout << "\nPassed\n";
+	}
+	else {
+		cout << "\nError\n";
+		return 0;
+	}
+	s = "6065812287883668764831544958683283296479682877898293612168136334983851946827579555449329483852397155";
+	if (solution.numDecodings(s) == 0) {
 		cout << "\nPassed\n";
 	}
 	else {
