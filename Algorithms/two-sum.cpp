@@ -1,5 +1,6 @@
 //1. Two Sum
 //https://leetcode.com/problems/two-sum/
+// https://discuss.leetcode.com/topic/3294/accepted-c-o-n-solution/1
 #include <iostream>
 #include <vector>
 #include <algorithm>
