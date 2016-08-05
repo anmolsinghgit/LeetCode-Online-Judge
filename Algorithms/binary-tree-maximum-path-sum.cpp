@@ -1,6 +1,7 @@
 // 124. Binary Tree Maximum Path Sum
 // https://leetcode.com/problems/binary-tree-maximum-path-sum/
 // https://discuss.leetcode.com/topic/4407/accepted-short-solution-in-java/2
+// http://algorithms.tutorialhorizon.com/given-a-binary-tree-find-the-maximum-path-sum-between-any-two-leaves/
 #include <iostream>
 #include <algorithm>
 #include <climits>
