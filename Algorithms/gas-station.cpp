@@ -18,7 +18,7 @@ public:
 				tank = 0;
 			}
 		}
-		return sum > 0 ? result : -1;
+		return sum >= 0 ? result : -1;
 	}
 };
 int main(void) {
