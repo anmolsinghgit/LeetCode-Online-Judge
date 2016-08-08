@@ -13,7 +13,7 @@ public:
 		for (size_t i = 0; i < gas.size(); ++i) {
 			tank += gas[i] - cost[i];
 			sum	+= gas[i] - cost[i];
-			if (gas[i] < cost[i]) {
+			if (tank < 0) {
 				result = i + 1;
 				tank = 0;
 			}
