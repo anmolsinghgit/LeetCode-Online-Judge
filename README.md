@@ -66,6 +66,7 @@
 | 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/sum-root-to-leaf-numbers.cpp) | Medium |
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/surrounded-regions.cpp) | Medium |
 | 131 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/palindrome-partitioning.cpp) | Medium |
+| 132 | [Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/palindrome-partitioning-ii.cpp) | Hard |
 | 133 | [Clone Graph](https://leetcode.com/problems/clone-graph/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/clone-graph.cpp) | Medium |
 | 134 | [Gas Station](https://leetcode.com/problems/gas-station/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/gas-station.cpp) | Medium |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/reverse-linked-list.cpp) | Easy |
