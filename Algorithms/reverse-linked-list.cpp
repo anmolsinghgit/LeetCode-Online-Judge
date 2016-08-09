@@ -1,30 +1,26 @@
 //206. Reverse Linked List
 //https://leetcode.com/problems/reverse-linked-list/
 //https://leetcode.com/discuss/34474/in-place-iterative-and-recursive-java-solution
-
 #include <iostream>
 using namespace std;
-
 struct ListNode {
 	int val;
-	ListNode* next;
-	ListNode(const int& x) : val(x), next(0) {}
+	ListNode *next;
+	ListNode(int x) : val(x), next(NULL) {}
 };
-
 class Solution {
 public:
 	ListNode* reverseList(ListNode* head) {
-		ListNode* newHead = 0;
+		ListNode *beforehead = NULL;
 		while (head) {
-			ListNode* next = head->next;
-			head->next = newHead;
-			newHead = head;
-			head = next;
+			ListNode *nexthead = head->next;
+			head->next = beforehead;
+			beforehead = head;
+			head = nexthead;
 		}
-		return newHead;
+		return beforehead;
 	}
 };
-
 int main(int argc, char** argv) {
 	Solution solution;
 	ListNode* head = new ListNode(0);
@@ -39,6 +35,5 @@ int main(int argc, char** argv) {
 		cout << it->val << '\n';
 		it = it->next;
 	}
-	getchar();
 	return 0;
 }
