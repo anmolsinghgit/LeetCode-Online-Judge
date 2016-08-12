@@ -18,19 +18,17 @@ public:
 			if (mid - 1 >= 0 && mid + 1 < n && nums[mid - 1] < nums[mid] && nums[mid] > nums[mid + 1]) return mid;
 			if (left - 1 >= 0 && left + 1 < n && nums[left - 1] < nums[left] && nums[left] > nums[left + 1]) return left;
 			if (right - 1 >= 0 && right + 1 < n && nums[right - 1] < nums[right] && nums[right] > nums[right + 1]) return right;
-			if (nums[left] < nums[mid] && nums[mid] > nums[right]) {
-				if (mid - 1 >= 0 && nums[mid - 1] > nums[mid]) {
-					++left;
-					right = mid - 1;
-					mid = left + (right - left) / 2;
-					continue;
-				}
-				if (mid + 1 < n && nums[mid] < nums[mid + 1]) {
-					--right;
-					left = mid + 1;
-					mid = left + (right - left) / 2;
-					continue;					
-				}
+			if (mid - 1 >= 0 && nums[mid - 1] > nums[mid]) {
+				++left;
+				right = mid - 1;
+				mid = left + (right - left) / 2;
+				continue;
+			}
+			if (mid + 1 < n && nums[mid] < nums[mid + 1]) {
+				left = mid + 1;
+				--right;
+				mid = left + (right - left) / 2;
+				continue;
 			}
 			++left;
 			--right;
