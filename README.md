@@ -82,6 +82,7 @@
 | 154 | [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/find-minimum-in-rotated-sorted-array-ii.cpp) | Hard |
 | 156 | [Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/binary-tree-upside-down.cpp) | Medium |
 | 157 | [Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/read-n-characters-given-read4.cpp) | Easy |
+| 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/find-peak-element.cpp) | Medium |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/reverse-linked-list.cpp) | Easy |
 | 231 | [Power of Two](https://leetcode.com/problems/power-of-two/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/power-of-two.cpp) | Easy |
 | 342 | [Power of Four](https://leetcode.com/problems/power-of-four/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/power-of-four.cpp) | Easy |
