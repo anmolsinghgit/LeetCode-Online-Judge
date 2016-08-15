@@ -1,5 +1,6 @@
 // 166. Fraction to Recurring Decimal
 // https://leetcode.com/problems/fraction-to-recurring-decimal/
+// https://discuss.leetcode.com/topic/6079/accepted-cpp-solution-with-explainations/3
 #include <iostream>
 #include <string>
 #include <cstdlib>
