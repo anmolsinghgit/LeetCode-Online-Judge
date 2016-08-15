@@ -1,5 +1,6 @@
 // 173. Binary Search Tree Iterator
 // https://leetcode.com/problems/binary-search-tree-iterator/
+// https://discuss.leetcode.com/topic/8154/morris-traverse-solution
 // https://discuss.leetcode.com/topic/6575/my-solutions-in-3-languages-with-stack/2
 #include <iostream>
 #include <vector>
@@ -13,32 +14,45 @@ struct TreeNode {
 class BSTIterator {
 public:
 	BSTIterator(TreeNode *root) {
-		while (root) {
-			this->stack.push_back(root);
-			root = root->left;
-		}
+		this->current = root;
 	}
 
 	/** @return whether we have a next smallest number */
 	bool hasNext() {
-		return !this->stack.empty();
+		return this->current;
 	}
 
 	/** @return the next smallest number */
 	int next() {
-		TreeNode *topofstack = this->stack.back();
-		int result = topofstack->val;
-		this->stack.pop_back();
-		topofstack = topofstack->right;
-		while (topofstack) {
-			this->stack.push_back(topofstack);
-			topofstack = topofstack->left;
+		while (this->current) {
+			if (!this->current->left) {
+				int result = this->current->val;
+				this->current = this->current->right;
+				return result;
+			}
+			TreeNode *pred = current->left;
+			while (pred->right && pred->right != this->current) pred = pred->right;
+			if (!pred->right) {
+				pred->right = this->current;
+				current = current->left;
+				continue;
+			}
+			pred->right = NULL;
+			int result = this->current->val;
+			this->current = this->current->right;
+			return result;		
 		}
-		return result;
+		return 0;
 	}
 private:
-	vector<TreeNode *>stack;
+	TreeNode *current;
 };
+
+/**
+ * Your BSTIterator will be called like this:
+ * BSTIterator i = BSTIterator(root);
+ * while (i.hasNext()) cout << i.next();
+ */
 int main(void) {
 	TreeNode *root = new TreeNode(3);
 	root->left = new TreeNode(1);
@@ -49,8 +63,3 @@ int main(void) {
 	cout << "\nPassed All\n";
 	return 0;
 }
-/**
- * Your BSTIterator will be called like this:
- * BSTIterator i = BSTIterator(root);
- * while (i.hasNext()) cout << i.next();
- */
