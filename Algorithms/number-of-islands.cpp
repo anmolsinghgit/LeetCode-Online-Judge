@@ -1,29 +1,23 @@
 // 200. Number of Islands
 // https://leetcode.com/problems/number-of-islands/
+// https://discuss.leetcode.com/topic/13248/very-concise-java-ac-solution
 #include <iostream>
 #include <vector>
 using namespace std;
 class Solution {
 public:
 	int numIslands(vector<vector<char>>& grid) {
+		int result = 0;
 		for (int i = 0; i < grid.size(); ++i) {
 			for (int j = 0; j < grid.front().size(); ++j) {
 				if (grid[i][j] == '1') {
-					grid[i][j] = 'X';
 					this->DFS(i - 1, j, grid);
 					this->DFS(i + 1, j, grid);
 					this->DFS(i, j - 1, grid);
 					this->DFS(i, j + 1, grid);
+					++result;
 				}
 			}
-		}
-		int result = 0;
-		for (const auto &i : grid) {
-			for (const auto &j : i) {
-				cout << j << '\t';
-				if (j == 'X') ++result;
-			}
-			cout << '\n';
 		}
 		return result;
 	}
@@ -31,7 +25,6 @@ private:
 	void DFS(int i, int j, vector<vector<char>>& grid) {
 		if (i < 0 || i >= grid.size() || j < 0 || j >= grid.front().size()) return;
 		if (grid[i][j] == '0') return;
-		if (grid[i][j] == 'X') return;
 		grid[i][j] = '0';
 		this->DFS(i - 1, j, grid);
 		this->DFS(i + 1, j, grid);
