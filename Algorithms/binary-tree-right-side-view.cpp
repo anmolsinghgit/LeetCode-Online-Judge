@@ -1,9 +1,8 @@
 // 199. Binary Tree Right Side View
 // https://leetcode.com/problems/binary-tree-right-side-view/
+// https://discuss.leetcode.com/topic/11768/my-simple-accepted-solution-java
 #include <iostream>
 #include <vector>
-#include <unordered_map>
-#include <deque>
 using namespace std;
 struct TreeNode {
 	int val;
@@ -13,43 +12,17 @@ struct TreeNode {
 };
 class Solution {
 public:
-	Solution(): depth(-1) {}
 	vector<int> rightSideView(TreeNode* root) {
 		vector<int> result;
-		if (!root) return result;
-		this->BFS(root);
-		this->preorderTraversal(root, result);
+		this->preorderTraveral(root, 0, result);
 		return result;
 	}
 private:
-	unordered_map<TreeNode *, int> hashMap;
-	int depth;
-	void BFS(TreeNode *root) {
-		this->hashMap[root] = 0;
-		deque<TreeNode *> dq;
-		dq.push_back(root);
-		while (!dq.empty()) {
-			root = dq.front();
-			if (root->left) {
-				this->hashMap[root->left] = this->hashMap[root] + 1;
-				dq.push_back(root->left);
-			}
-			if (root->right) {
-				this->hashMap[root->right] = this->hashMap[root] + 1;
-				dq.push_back(root->right);
-			}
-			dq.pop_front();
-			continue;
-		}
-	}
-	void preorderTraversal(TreeNode* root, vector<int>& result) {
+	void preorderTraveral(TreeNode *root, size_t depth, vector<int>& result) {
 		if (!root) return;
-		if (this->hashMap[root] > this->depth) {
-			result.push_back(root->val);
-			this->depth = this->hashMap[root];
-		}
-		this->preorderTraversal(root->right, result);
-		this->preorderTraversal(root->left, result);
+		if (depth == result.size()) result.push_back(root->val);
+		this->preorderTraveral(root->right, depth + 1, result);
+		this->preorderTraveral(root->left, depth + 1, result);
 		return;
 	}
 };
