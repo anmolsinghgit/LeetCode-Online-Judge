@@ -1,6 +1,7 @@
 // 209. Minimum Size Subarray Sum
 // https://leetcode.com/problems/minimum-size-subarray-sum/
 // https://discuss.leetcode.com/topic/18583/accepted-clean-java-o-n-solution-two-pointers
+// https://discuss.leetcode.com/topic/30941/here-is-a-10-line-template-that-can-solve-most-substring-problems
 #include <iostream>
 #include <vector>
 #include <algorithm>
