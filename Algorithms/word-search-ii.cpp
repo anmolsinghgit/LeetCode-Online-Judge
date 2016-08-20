@@ -1,5 +1,6 @@
 // 212. Word Search II
 // https://leetcode.com/problems/word-search-ii/
+// https://discuss.leetcode.com/topic/14256/my-simple-and-clean-java-code-using-dfs-and-trie
 #include <iostream>
 #include <string>
 #include <cstring>
