@@ -64,20 +64,20 @@ public:
 				visited[i][j] = true;
 				if (!trie.startsWith(path)) continue;
 				if (trie.search(path)) result.insert(path);
-				this->dfs(i, j, path, visited, result, board, maxLen, trie);
+				this->backTracking(i, j, path, visited, result, board, maxLen, trie);
 			}
 		}
 		return vector<string>(begin(result), end(result));
 	}
 private:
-	void dfs(int i, int j, string path, vector<vector<bool>>& visited, unordered_set<string>& result, vector<vector<char>>& board, size_t maxLen, Trie &trie) {
+	void backTracking(int i, int j, string path, vector<vector<bool>>& visited, unordered_set<string>& result, vector<vector<char>>& board, size_t maxLen, Trie &trie) {
 		if (i < 0 || i >= board.size() || j < 0 || j >= board.front().size() || !visited[i][j] || path.size() > maxLen) return;
 		if (i >= 1 && !visited[i - 1][j]) {
 			path.push_back(board[i - 1][j]);
 			if (trie.startsWith(path)) {
 				if (trie.search(path)) result.insert(path);
 				visited[i - 1][j] = true;
-				this->dfs(i - 1, j, path, visited, result, board, maxLen, trie);
+				this->backTracking(i - 1, j, path, visited, result, board, maxLen, trie);
 				visited[i - 1][j] = false;
 			}
 			path.pop_back();
@@ -87,7 +87,7 @@ private:
 			if (trie.startsWith(path)) {
 				if (trie.search(path)) result.insert(path);
 				visited[i + 1][j] = true;
-				this->dfs(i + 1, j, path, visited, result, board, maxLen, trie);
+				this->backTracking(i + 1, j, path, visited, result, board, maxLen, trie);
 				visited[i + 1][j] = false;
 			}
 			path.pop_back();
@@ -97,7 +97,7 @@ private:
 			if (trie.startsWith(path)) {
 				if (trie.search(path)) result.insert(path);
 				visited[i][j - 1] = true;
-				this->dfs(i, j - 1, path, visited, result, board, maxLen, trie);
+				this->backTracking(i, j - 1, path, visited, result, board, maxLen, trie);
 				visited[i][j - 1] = false;
 			}
 			path.pop_back();
@@ -107,7 +107,7 @@ private:
 			if (trie.startsWith(path)) {
 				if (trie.search(path)) result.insert(path);
 				visited[i][j + 1] = true;
-				this->dfs(i, j + 1, path, visited, result, board, maxLen, trie);
+				this->backTracking(i, j + 1, path, visited, result, board, maxLen, trie);
 				visited[i][j + 1] = false;
 			}
 			path.pop_back();
