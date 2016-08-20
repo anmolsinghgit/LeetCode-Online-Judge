@@ -5,8 +5,6 @@
 #include <cstring>
 #include <vector>
 #include <algorithm>
-#include <unordered_set>
-#include <iterator>
 using namespace std;
 class TrieNode {
 public:
@@ -28,20 +26,20 @@ public:
 		it->isEnd = true;
 	}
 	bool search(string word) {
-		TrieNode *it = root;
-		for (const auto &c : word) {
-			if (!it->links[c - 'a']) return false;
-			it = it->links[c - 'a'];
-		}
+		TrieNode *it = this->find(word);
 		return it && it->isEnd;
 	}
 	bool startsWith(string word) {
+		TrieNode *it = this->find(word);
+		return it;
+	}
+	TrieNode *find(string word) {
 		TrieNode *it = root;
 		for (const auto &c : word) {
-			if (!it->links[c - 'a']) return false;
+			if (!it->links[c - 'a']) return it->links[c - 'a'];
 			it = it->links[c - 'a'];
 		}
-		return true;
+		return it;		
 	}
 private:
 	TrieNode *root;
@@ -55,63 +53,36 @@ public:
 			trie.insert(s);
 			maxLen = max(maxLen, s.size());
 		}
-		unordered_set<string> result;
+		vector<string> result;
 		for (int i = 0; i < board.size(); ++i) {
 			for (int j = 0; j < board.front().size(); ++j) {
 				string path;
-				path.push_back(board[i][j]);
-				vector<vector<bool>> visited(board.size(), vector<bool>(board.front().size(), false));
-				visited[i][j] = true;
-				if (!trie.startsWith(path)) continue;
-				if (trie.search(path)) result.insert(path);
-				this->backTracking(i, j, path, visited, result, board, maxLen, trie);
+				this->backTracking(i, j, path, result, board, maxLen, trie);
 			}
 		}
-		return vector<string>(begin(result), end(result));
+		return result;
 	}
 private:
-	void backTracking(int i, int j, string path, vector<vector<bool>>& visited, unordered_set<string>& result, vector<vector<char>>& board, size_t maxLen, Trie &trie) {
-		if (i < 0 || i >= board.size() || j < 0 || j >= board.front().size() || !visited[i][j] || path.size() > maxLen) return;
-		if (i >= 1 && !visited[i - 1][j]) {
-			path.push_back(board[i - 1][j]);
-			if (trie.startsWith(path)) {
-				if (trie.search(path)) result.insert(path);
-				visited[i - 1][j] = true;
-				this->backTracking(i - 1, j, path, visited, result, board, maxLen, trie);
-				visited[i - 1][j] = false;
-			}
+	void backTracking(int i, int j, string& path, vector<string>& result, vector<vector<char>>& board, size_t maxLen, Trie &trie) {
+		if (i < 0 || i >= board.size() || j < 0 || j >= board.front().size() || board[i][j] == 'X' || path.size() > maxLen) return;
+		path.push_back(board[i][j]);
+		TrieNode *it = trie.find(path);
+		if (!it) {
 			path.pop_back();
+			return;
 		}
-		if (i + 1 < board.size() && !visited[i + 1][j]) {
-			path.push_back(board[i + 1][j]);
-			if (trie.startsWith(path)) {
-				if (trie.search(path)) result.insert(path);
-				visited[i + 1][j] = true;
-				this->backTracking(i + 1, j, path, visited, result, board, maxLen, trie);
-				visited[i + 1][j] = false;
-			}
-			path.pop_back();
+		if (it->isEnd) {
+			result.push_back(path);
+			it->isEnd = false;
 		}
-		if (j >= 1 && !visited[i][j - 1]) {
-			path.push_back(board[i][j - 1]);
-			if (trie.startsWith(path)) {
-				if (trie.search(path)) result.insert(path);
-				visited[i][j - 1] = true;
-				this->backTracking(i, j - 1, path, visited, result, board, maxLen, trie);
-				visited[i][j - 1] = false;
-			}
-			path.pop_back();
-		}
-		if (j + 1 < board.front().size() && !visited[i][j + 1]) {
-			path.push_back(board[i][j + 1]);
-			if (trie.startsWith(path)) {
-				if (trie.search(path)) result.insert(path);
-				visited[i][j + 1] = true;
-				this->backTracking(i, j + 1, path, visited, result, board, maxLen, trie);
-				visited[i][j + 1] = false;
-			}
-			path.pop_back();
-		}
+		char c = board[i][j];
+		board[i][j] = 'X';
+		this->backTracking(i - 1, j, path, result, board, maxLen, trie);
+		this->backTracking(i + 1, j, path, result, board, maxLen, trie);
+		this->backTracking(i, j - 1, path, result, board, maxLen, trie);
+		this->backTracking(i, j + 1, path, result, board, maxLen, trie);
+		board[i][j] = c;
+		path.pop_back();
 		return;
 	}
 };
