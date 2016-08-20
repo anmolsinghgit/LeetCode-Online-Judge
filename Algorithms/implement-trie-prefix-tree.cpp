@@ -11,7 +11,7 @@ class TrieNode {
 public:
 	// Initialize your data structure here.
 	TrieNode(): isEnd(false) {
-		memset(links, NULL, sizeof(links));
+		memset(links, 0, sizeof(links));
 	}
 	TrieNode *links[26];
 	bool isEnd;
@@ -24,33 +24,33 @@ public:
 	// Inserts a word into the trie.
 	void insert(string word) {
 		TrieNode *it = this->root;
-		for (const auto &i : word) {
-			if (!it->links[i - 'a']) it->links[i - 'a'] = new TrieNode();
-			it = it->links[i - 'a'];
+		for (const auto &c : word) {
+			if (!it->links[c - 'a']) it->links[c - 'a'] = new TrieNode();
+			it = it->links[c - 'a'];
 		}
 		it->isEnd = true;
-		return;
 	}
 
 	// Returns if the word is in the trie.
 	bool search(string word) {
-		TrieNode *it = this->root;
-		for (const auto &i : word) {
-			if (!it->links[i - 'a']) return false;
-			it = it->links[i - 'a'];
-		}
-		return it->isEnd;
+		TrieNode *it = this->find(word);
+		return it && it->isEnd;
 	}
 
 	// Returns if there is any word in the trie
 	// that starts with the given prefix.
-	bool startsWith(string prefix) {
-		TrieNode *it = this->root;
-		for (const auto &i : prefix) {
-			if (!it->links[i - 'a']) return false;
-			it = it->links[i - 'a'];
+	bool startsWith(string word) {
+		TrieNode *it = this->find(word);
+		return it;
+	}
+
+	TrieNode *find(string word) {
+		TrieNode *it = root;
+		for (const auto &c : word) {
+			if (!it->links[c - 'a']) return it->links[c - 'a'];
+			it = it->links[c - 'a'];
 		}
-		return true;		
+		return it;		
 	}
 
 private:
