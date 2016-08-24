@@ -34,6 +34,7 @@
 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/unique-paths-ii.cpp) | Medium |
 | 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/minimum-path-sum.cpp) | Medium |
 | 65 | [Valid Number](https://leetcode.com/problems/valid-number/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/valid-number.cpp) | Hard |
+| 66 | [Plus One](https://leetcode.com/problems/plus-one/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/plus-one.cpp) | Easy |
 | 68 | [Text Justification](https://leetcode.com/problems/text-justification/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/text-justification.cpp) | Hard |
 | 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/sqrtx.cpp) | Medium |
 | 71 | [Simplify Path](https://leetcode.com/problems/simplify-path/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/simplify-path.cpp) | Medium |
