@@ -109,3 +109,4 @@
 | 346 | [Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/moving-average-from-data-stream.cpp) | Easy |
 | 356 | [Line Reflection](https://leetcode.com/problems/line-reflection/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/line-reflection.cpp) | Medium |
 | 366 | [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/find-leaves-of-binary-tree.cpp) | Medium |
+| 371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) |  [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/sum-of-two-integers.cpp) | Easy |
