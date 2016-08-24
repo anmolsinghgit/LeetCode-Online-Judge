@@ -102,6 +102,7 @@
 | 211 | [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/add-and-search-word-data-structure-design.cpp) | Medium |
 | 212 | [Word Search II](https://leetcode.com/problems/word-search-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/word-search-ii.cpp) | Hard |
 | 214 | [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/shortest-palindrome.cpp) | Hard |
+| 216 | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/combination-sum-iii.cpp) | Medium |
 | 231 | [Power of Two](https://leetcode.com/problems/power-of-two/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/power-of-two.cpp) | Easy |
 | 342 | [Power of Four](https://leetcode.com/problems/power-of-four/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/power-of-four.cpp) | Easy |
 | 346 | [Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/moving-average-from-data-stream.cpp) | Easy |
