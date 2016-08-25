@@ -122,3 +122,4 @@
 | 370 | [Range Addition](https://leetcode.com/problems/range-addition/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/range-addition.cpp) | Medium |
 | 371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/sum-of-two-integers.cpp) | Easy |
 | 383 | [Ransom Note](https://leetcode.com/problems/ransom-note/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/ransom-note.cpp) | Easy |
+| 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/first-unique-character-in-a-string.cpp) | Easy |
