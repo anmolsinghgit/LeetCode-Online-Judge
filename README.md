@@ -119,4 +119,5 @@
 | 366 | [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/find-leaves-of-binary-tree.cpp) | Medium |
 | 369 | [Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/plus-one-linked-list.cpp) | Medium |
 | 370 | [Range Addition](https://leetcode.com/problems/range-addition/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/range-addition.cpp) | Medium |
-| 371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) |  [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/sum-of-two-integers.cpp) | Easy |
+| 371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/sum-of-two-integers.cpp) | Easy |
+| 383 | [Ransom Note](https://leetcode.com/problems/ransom-note/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/ransom-note.cpp) | Easy |
