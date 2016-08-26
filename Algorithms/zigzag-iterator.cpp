@@ -1,5 +1,6 @@
 // 281. Zigzag Iterator
 // https://leetcode.com/problems/zigzag-iterator/
+// https://discuss.leetcode.com/topic/24231/short-java-o-1-space
 // https://discuss.leetcode.com/topic/24548/c-with-queue-compatible-with-k-vectors
 #include <iostream>
 #include <vector>
