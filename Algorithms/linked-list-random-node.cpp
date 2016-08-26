@@ -16,6 +16,7 @@ public:
 	/** @param head The linked list's head.
 		Note that the head is guaranteed to be not null, so it contains at least one node. */
 	Solution(ListNode* head) {
+		srand (time(NULL));
 		this->head = head;
 	}
 
@@ -39,7 +40,6 @@ private:
  */
 
 int main(void) {
-	srand (time(NULL));
 	// Init a singly linked list [1,2,3].
 	ListNode *head = new ListNode(1);
 	head->next = new ListNode(2);
