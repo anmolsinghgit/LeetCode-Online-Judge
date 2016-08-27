@@ -108,6 +108,7 @@
 | 216 | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/combination-sum-iii.cpp) | Medium |
 | 231 | [Power of Two](https://leetcode.com/problems/power-of-two/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/power-of-two.cpp) | Easy |
 | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/product-of-array-except-self.cpp) | Medium |
+| 256 | [Paint House](https://leetcode.com/problems/paint-house/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/paint-house.cpp) | Medium |
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/ugly-number.cpp) | Easy |
 | 281 | [Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/zigzag-iterator.cpp) | Medium |
 | 296 | [Best Meeting Point](https://leetcode.com/problems/best-meeting-point/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/best-meeting-point.cpp) | Hard |
