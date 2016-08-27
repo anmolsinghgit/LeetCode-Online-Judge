@@ -1,5 +1,6 @@
 // 384. Shuffle an Array
 // https://leetcode.com/problems/shuffle-an-array/
+// http://www.cplusplus.com/reference/algorithm/shuffle/
 // https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
 // https://discuss.leetcode.com/topic/54022/c-solution-with-fisher-yates-algorithm
 #include <iostream>
@@ -7,6 +8,10 @@
 #include <ctime>
 #include <cstdlib>
 #include <utility>
+#include <algorithm>
+#include <random>
+#include <chrono>
+#include <iterator>
 using namespace std;
 class Solution {
 public:
@@ -22,11 +27,10 @@ public:
 
 	/** Returns a random shuffling of the array. */
 	vector<int> shuffle() {
-		vector<int> result;
-		for (size_t i = 0; i < this->nums.size(); ++i) {
-			size_t j = rand() % (1 + result.size());
-			result.push_back(this->nums[i]);
-			swap(result[j], result.back());
+		vector<int> result(this->nums);
+		for (int i = this->nums.size() - 1; i >= 1; --i) {
+			int j = rand() % (i + 1);
+			swap(result[i], result[j]);
 		}
 		return result;
 	}
@@ -35,6 +39,21 @@ public:
 	// 	for (int i = this->nums.size() - 1; i >= 1; --i) {
 	// 		int j = rand() % (i + 1);
 	// 		swap(result[i], result[j]);
+	// 	}
+	// 	return result;
+	// }
+	// vector<int> shuffle() {
+	// 	vector<int> result(this->nums);
+	// 	unsigned seed = chrono::system_clock::now().time_since_epoch().count();
+	// 	std::shuffle(begin(result), end(result), default_random_engine(seed));
+	// 	return result;
+	// }
+	// vector<int> shuffle() {
+	// 	vector<int> result;
+	// 	for (size_t i = 0; i < this->nums.size(); ++i) {
+	// 		size_t j = rand() % (1 + result.size());
+	// 		result.push_back(this->nums[i]);
+	// 		swap(result[j], result.back());
 	// 	}
 	// 	return result;
 	// }
