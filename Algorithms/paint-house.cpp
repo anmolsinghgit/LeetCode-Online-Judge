@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <iterator>
 using namespace std;
 class Solution {
 public:
@@ -11,7 +12,7 @@ public:
 		for (size_t i = 1; i < costs.size(); ++i)
 			for (int j = 0; j < 3; ++j)
 				costs[i][j] = min(costs[i][j] + costs[i - 1][(j + 1) % 3], costs[i][j] + costs[i - 1][(j + 2) % 3]);
-		return min(min(costs.back()[0], costs.back()[1]), costs.back()[2]);
+		return *min_element(begin(costs.back()), end(costs.back()));
 	}
 };
 int main(void) {
