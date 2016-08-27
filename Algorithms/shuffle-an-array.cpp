@@ -6,6 +6,7 @@
 #include <vector>
 #include <ctime>
 #include <cstdlib>
+#include <utility>
 using namespace std;
 class Solution {
 public:
@@ -29,6 +30,14 @@ public:
 		}
 		return result;
 	}
+	// vector<int> shuffle() {
+	// 	vector<int> result(this->nums);
+	// 	for (int i = this->nums.size() - 1; i >= 1; --i) {
+	// 		int j = rand() % (i + 1);
+	// 		swap(result[i], result[j]);
+	// 	}
+	// 	return result;
+	// }
 private:
 	vector<int> nums;
 };
