@@ -126,4 +126,5 @@
 | 374 | [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/guess-number-higher-or-lower.cpp) | Easy |
 | 382 | [Linked List Random Node](https://leetcode.com/problems/linked-list-random-node/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/linked-list-random-node.cpp) | Medium |
 | 383 | [Ransom Note](https://leetcode.com/problems/ransom-note/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/ransom-note.cpp) | Easy |
+| 384 | [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/shuffle-an-array.cpp) | Medium |
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/first-unique-character-in-a-string.cpp) | Easy |
