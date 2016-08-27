@@ -111,6 +111,7 @@
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/ugly-number.cpp) | Easy |
 | 281 | [Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/zigzag-iterator.cpp) | Medium |
 | 296 | [Best Meeting Point](https://leetcode.com/problems/best-meeting-point/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/best-meeting-point.cpp) | Hard |
+| 323 | [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/number-of-connected-components-in-an-undirected-graph.cpp) | Medium |
 | 339 | [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/nested-list-weight-sum.cpp) | Easy | 
 | 342 | [Power of Four](https://leetcode.com/problems/power-of-four/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/power-of-four.cpp) | Easy |
 | 346 | [Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/moving-average-from-data-stream.cpp) | Easy |
