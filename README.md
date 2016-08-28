@@ -73,6 +73,7 @@
 | 133 | [Clone Graph](https://leetcode.com/problems/clone-graph/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/clone-graph.cpp) | Medium |
 | 134 | [Gas Station](https://leetcode.com/problems/gas-station/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/gas-station.cpp) | Medium |
 | 135 | [Candy](https://leetcode.com/problems/candy/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/candy.cpp) | Hard |
+| 136 | [Single Number](https://leetcode.com/problems/single-number/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/single-number.cpp) | Easy |
 | 138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/copy-list-with-random-pointer.cpp) | Hard |
 | 143 | [Reorder List](https://leetcode.com/problems/reorder-list/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/reorder-list.cpp) | Medium |
 | 147 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/insertion-sort-list.cpp) | Medium |
@@ -132,3 +133,4 @@
 | 383 | [Ransom Note](https://leetcode.com/problems/ransom-note/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/ransom-note.cpp) | Easy |
 | 384 | [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/shuffle-an-array.cpp) | Medium |
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/first-unique-character-in-a-string.cpp) | Easy |
+| 389 | [Find the Difference](https://leetcode.com/problems/find-the-difference/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/find-the-difference.cpp) | Easy |
