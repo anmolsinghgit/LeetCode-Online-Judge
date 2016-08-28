@@ -6,31 +6,40 @@
 #include <algorithm>
 #include <iterator>
 #include <utility>
+#include <queue>
 using namespace std;
 class Solution {
 public:
 	int findKthLargest(vector<int>& nums, int k) {
-		int left = 0, right = nums.size() - 1;
-		while (true) {
-			int i = this->partition(nums, left, right);
-			if (i == k - 1) return nums[i];
-			if (i < k - 1) left = i + 1;
-			else right = i - 1;
-		}
-		return -1;
-	}
-private:
-	int partition(vector<int>& nums, int left, int right) {
-		int i = left + 1, j = right, pivot = nums[left];
-		while (i <= j) {
-			if (nums[i] < pivot && nums[j] > pivot) swap(nums[i++], nums[j--]);
-			if (nums[i] >= pivot) i++;
-			if (nums[j] <= pivot) j--;
-		}
-		swap(nums[left], nums[j]);
-		return j;
+		priority_queue<int> pq(begin(nums), end(nums));
+		while (--k) pq.pop();
+		return pq.top();
 	}
 };
+// class Solution {
+// public:
+// 	int findKthLargest(vector<int>& nums, int k) {
+// 		int left = 0, right = nums.size() - 1;
+// 		while (true) {
+// 			int i = this->partition(nums, left, right);
+// 			if (i == k - 1) return nums[i];
+// 			if (i < k - 1) left = i + 1;
+// 			else right = i - 1;
+// 		}
+// 		return -1;
+// 	}
+// private:
+// 	int partition(vector<int>& nums, int left, int right) {
+// 		int i = left + 1, j = right, pivot = nums[left];
+// 		while (i <= j) {
+// 			if (nums[i] < pivot && nums[j] > pivot) swap(nums[i++], nums[j--]);
+// 			if (nums[i] >= pivot) i++;
+// 			if (nums[j] <= pivot) j--;
+// 		}
+// 		swap(nums[left], nums[j]);
+// 		return j;
+// 	}
+// };
 // class Solution {
 // public:
 // 	int findKthLargest(vector<int>& nums, int k) {
