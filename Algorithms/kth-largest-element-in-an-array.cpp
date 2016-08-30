@@ -11,11 +11,41 @@ using namespace std;
 class Solution {
 public:
 	int findKthLargest(vector<int>& nums, int k) {
-		priority_queue<int> pq(begin(nums), end(nums));
-		while (--k) pq.pop();
-		return pq.top();
+		this->buildMaxHeap(nums);
+		int result = 0;
+		while (k--) {
+			result = nums[0];
+			swap(nums[0], nums[--this->heapSize]);
+			this->maxHeapify(nums, 0);
+		}
+		return result;
+	}
+private:
+	int heapSize;
+	inline int left(int idx) {return (idx << 1) + 1;}
+	inline int right(int idx) {return (idx << 1) + 2;}
+	void maxHeapify(vector<int>& nums, int idx) {
+		int largest = idx;
+		int l = this->left(idx), r = this->right(idx);
+		if (l < this->heapSize && nums[l] > nums[largest]) largest = l;
+		if (r < this->heapSize && nums[r] > nums[largest]) largest = r;
+		if (largest == idx) return;
+		swap(nums[largest], nums[idx]);
+		this->maxHeapify(nums, largest);
+	}
+	void buildMaxHeap(vector<int>& nums) {
+		this->heapSize = nums.size();
+		for (int i = (this->heapSize >> 1) - 1; i >= 0; --i) this->maxHeapify(nums, i);
 	}
 };
+// class Solution {
+// public:
+// 	int findKthLargest(vector<int>& nums, int k) {
+// 		priority_queue<int> pq(begin(nums), end(nums));
+// 		while (--k) pq.pop();
+// 		return pq.top();
+// 	}
+// };
 // class Solution {
 // public:
 // 	int findKthLargest(vector<int>& nums, int k) {
