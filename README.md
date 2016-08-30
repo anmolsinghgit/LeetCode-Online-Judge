@@ -123,6 +123,7 @@
 | 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/intersection-of-two-arrays.cpp) | Easy |
 | 350 | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/intersection-of-two-arrays-ii.cpp) | Easy |
 | 356 | [Line Reflection](https://leetcode.com/problems/line-reflection/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/line-reflection.cpp) | Medium |
+| 357 | [Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/count-numbers-with-unique-digits.cpp) | Medium |
 | 359 | [Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/logger-rate-limiter.cpp) | Easy |
 | 362 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/design-hit-counter.cpp) | Medium |
 | 364 | [Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/nested-list-weight-sum-ii.cpp) | Medium |
