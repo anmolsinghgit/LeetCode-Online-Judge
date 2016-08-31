@@ -20,7 +20,7 @@ class Solution {
 public:
 	int minMeetingRooms(vector<Interval>& intervals) {
 		if (intervals.empty()) return 0;
-		sort(begin(intervals), end(intervals), [](Interval a, Interval b) {return a.start < b.start;});
+		sort(begin(intervals), end(intervals), [](Interval& a, Interval& b) {return a.start < b.start;});
 		priority_queue<int, vector<int>, greater<int>> pq;
 		pq.push(intervals[0].end);
 		for (size_t i = 1; i < intervals.size(); ++i) {
