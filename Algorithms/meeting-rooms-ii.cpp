@@ -1,6 +1,7 @@
 // 253. Meeting Rooms II
 // https://leetcode.com/problems/meeting-rooms-ii/
 // https://discuss.leetcode.com/topic/27444/concise-c-solution-with-min_heap-sort-greedy
+// https://discuss.leetcode.com/topic/20958/ac-java-solution-using-min-heap
 // Algorithm Design by Jon Kleinberg and Éva Tardos
 // https://discuss.leetcode.com/topic/20958/ac-java-solution-using-min-heap
 #include <iostream>
