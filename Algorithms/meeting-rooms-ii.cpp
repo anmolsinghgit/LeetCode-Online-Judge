@@ -23,8 +23,7 @@ public:
 		if (intervals.empty()) return 0;
 		sort(begin(intervals), end(intervals), [](Interval& a, Interval& b) {return a.start < b.start;});
 		priority_queue<int, vector<int>, greater<int>> pq;
-		pq.push(intervals[0].end);
-		for (size_t i = 1; i < intervals.size(); ++i) {
+		for (size_t i = 0; i < intervals.size(); ++i) {
 			if (!pq.empty() && pq.top() <= intervals[i].start) pq.pop();
 			pq.push(intervals[i].end);
 		}
