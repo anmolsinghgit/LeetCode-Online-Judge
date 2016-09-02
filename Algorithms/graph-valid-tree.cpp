@@ -3,16 +3,11 @@
 #include <iostream>
 #include <vector>
 #include <utility>
-#include <algorithm>
-#include <iterator>
-#include <numeric>
 using namespace std;
 class Solution {
 public:
 	bool validTree(int n, vector<pair<int, int>>& edges) {
 		if (n != (int)edges.size() + 1) return false;
-		// for (auto &i : edges) if (i.first > i.second) swap(i.first, i.second);
-		// sort(begin(edges), end(edges));
 		vector<int> roots(n, -1);
 		for (const auto &i : edges) {
 			int x = i.first, y = i.second;
