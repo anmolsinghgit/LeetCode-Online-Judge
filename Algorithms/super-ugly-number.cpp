@@ -1,5 +1,6 @@
 // 313. Super Ugly Number
 // https://leetcode.com/problems/super-ugly-number/
+// https://discuss.leetcode.com/topic/34841/java-three-methods-23ms-36-ms-58ms-with-heap-performance-explained
 #include <iostream>
 #include <vector>
 #include <algorithm>
