@@ -114,6 +114,7 @@
 | 256 | [Paint House](https://leetcode.com/problems/paint-house/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/paint-house.cpp) | Medium |
 | 261 | [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/graph-valid-tree.cpp) | Medium |
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/ugly-number.cpp) | Easy |
+| 264 | [Ugly Number II](https://leetcode.com/problems/ugly-number-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/ugly-number-ii.cpp) | Medium |
 | 265 | [Paint House II](https://leetcode.com/problems/paint-house-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/paint-house-ii.cpp) | Hard |
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/missing-number.cpp) | Medium |
 | 281 | [Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/zigzag-iterator.cpp) | Medium |
