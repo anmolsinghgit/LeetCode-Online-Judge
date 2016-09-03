@@ -122,6 +122,7 @@
 | 294 | [Flip Game II](https://leetcode.com/problems/flip-game-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/flip-game-ii.cpp) | Medium |
 | 296 | [Best Meeting Point](https://leetcode.com/problems/best-meeting-point/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/best-meeting-point.cpp) | Hard |
 | 305 | [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/number-of-islands-ii.cpp) | Hard |
+| 313 | [Super Ugly Number](https://leetcode.com/problems/super-ugly-number/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/super-ugly-number.cpp) | Medium |
 | 320 | [Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/generalized-abbreviation.cpp) | Medium |
 | 323 | [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/number-of-connected-components-in-an-undirected-graph.cpp) | Medium |
 | 339 | [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/nested-list-weight-sum.cpp) | Easy | 
