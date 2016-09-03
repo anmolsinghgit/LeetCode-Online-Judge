@@ -36,6 +36,7 @@ public:
 // 		return result;
 // 	}
 // };
+// Memory Limit Exceeded
 int main(void) {
 	Solution solution;
 	vector<int> primes = {2, 7, 13, 19};
