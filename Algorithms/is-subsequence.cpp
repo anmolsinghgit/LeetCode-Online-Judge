@@ -1,5 +1,6 @@
 // 392. Is Subsequence
 // https://leetcode.com/problems/is-subsequence/
+// https://discuss.leetcode.com/topic/57151/3-lines-c
 #include <iostream>
 #include <string>
 using namespace std;
