@@ -150,3 +150,4 @@
 | 384 | [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/shuffle-an-array.cpp) | Medium |
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/first-unique-character-in-a-string.cpp) | Easy |
 | 389 | [Find the Difference](https://leetcode.com/problems/find-the-difference/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/find-the-difference.cpp) | Easy |
+| 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/is-subsequence.cpp) | Medium |
