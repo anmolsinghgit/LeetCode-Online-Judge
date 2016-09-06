@@ -3,16 +3,20 @@
 #include <iostream>
 #include <string>
 using namespace std;
-class Solution {
-public:
-	bool isSubsequence(string s, string t) {
-		return this->isSubsequence(s.data(), t.data());
-	}
-	bool isSubsequence(const char* x, const char* y) {
-		while (*y) x += *x == *y++;
-		return !*x;
-	}
-};
+bool isSubsequence(char* s, char* t) {
+	while (*t) s += *s == *t++;
+	return !*s;
+}
+// class Solution {
+// public:
+// 	bool isSubsequence(string s, string t) {
+// 		return this->isSubsequence(s.data(), t.data());
+// 	}
+// 	bool isSubsequence(const char* x, const char* y) {
+// 		while (*y) x += *x == *y++;
+// 		return !*x;
+// 	}
+// };
 // class Solution {
 // public:
 // 	bool isSubsequence(string s, string t) {
