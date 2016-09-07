@@ -1,6 +1,6 @@
 // 219. Contains Duplicate II
 // https://leetcode.com/problems/contains-duplicate-ii/
-// https://discuss.leetcode.com/topic/15045/c-solution-with-unordered_set
+// https://discuss.leetcode.com/topic/15045/c-solution-with-set
 #include <iostream>
 #include <vector>
 #include <unordered_set>
@@ -8,11 +8,11 @@ using namespace std;
 class Solution {
 public:
 	bool containsNearbyDuplicate(vector<int>& nums, int k) {
-		unordered_set<int> hashSet;
+		unordered_set<int> checkSet;
 		for (size_t i = 0; i < nums.size(); ++i) {
-			if (i > k) hashSet.erase(nums[i - k - 1]);
-			if (hashSet.count(nums[i])) return true;
-			hashSet.insert(nums[i]);
+			if (i > k) checkSet.erase(nums[i - k - 1]);
+			if (checkSet.count(nums[i])) return true;
+			checkSet.insert(nums[i]);
 		}
 		return false;
 	}
