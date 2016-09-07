@@ -3,13 +3,13 @@
 // https://discuss.leetcode.com/topic/14944/single-line-c-solution-60ms
 #include <iostream>
 #include <vector>
-#include <set>
+#include <unordered_set>
 #include <iterator>
 using namespace std;
 class Solution {
 public:
 	bool containsDuplicate(vector<int>& nums) {
-		return nums.size() > set<int>(begin(nums), end(nums)).size();
+		return nums.size() > unordered_set<int>(begin(nums), end(nums)).size();
 	}
 };
 int main(void) {
