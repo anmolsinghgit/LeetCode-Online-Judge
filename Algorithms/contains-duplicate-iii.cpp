@@ -1,11 +1,14 @@
 // 220. Contains Duplicate III
 // https://leetcode.com/problems/contains-duplicate-iii/
 // https://discuss.leetcode.com/topic/18453/c-using-set-less-10-lines-with-simple-explanation/
+// https://en.wikipedia.org/wiki/Floor_and_ceiling_functions
 #include <iostream>
 #include <vector>
 #include <set>
+#include <unordered_set>
 #include <iterator>
 #include <cstdlib>
+#include <algorithm>
 using namespace std;
 class Solution {
 public:
@@ -25,7 +28,7 @@ public:
 // class Solution {
 // public:
 // 	bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t) {
-// 		if (t < 0 || k < 0) return false;
+// 		if (k <= 0 || t < 0) return false;
 // 		set<int> RBT;
 // 		for (size_t i = 0; i < nums.size(); ++i) {
 // 			if ((int)i > k) RBT.erase(nums[i - k - 1]);
