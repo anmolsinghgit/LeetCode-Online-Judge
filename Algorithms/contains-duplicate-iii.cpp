@@ -1,5 +1,6 @@
 // 220. Contains Duplicate III
 // https://leetcode.com/problems/contains-duplicate-iii/
+// https://leetcode.com/articles/contains-duplicate-iii/
 // https://discuss.leetcode.com/topic/18453/c-using-set-less-10-lines-with-simple-explanation/
 // https://en.wikipedia.org/wiki/Floor_and_ceiling_functions
 #include <iostream>
