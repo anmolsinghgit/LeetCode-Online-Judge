@@ -1,5 +1,6 @@
 // 302. Smallest Rectangle Enclosing Black Pixels
 // https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/
+// https://discuss.leetcode.com/topic/29006/c-java-python-binary-search-solution-with-explanation
 // https://discuss.leetcode.com/topic/29211/very-easy-dfs-java-solution-with-comments
 #include <iostream>
 #include <vector>
