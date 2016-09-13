@@ -145,6 +145,7 @@
 | 356 | [Line Reflection](https://leetcode.com/problems/line-reflection/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/line-reflection.cpp) | Medium |
 | 357 | [Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/count-numbers-with-unique-digits.cpp) | Medium |
 | 359 | [Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/logger-rate-limiter.cpp) | Easy |
+| 360 | [Sort Transformed Array](https://leetcode.com/problems/sort-transformed-array/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/sort-transformed-array.cpp) | Medium |
 | 362 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/design-hit-counter.cpp) | Medium |
 | 364 | [Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/nested-list-weight-sum-ii.cpp) | Medium |
 | 366 | [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/find-leaves-of-binary-tree.cpp) | Medium |
