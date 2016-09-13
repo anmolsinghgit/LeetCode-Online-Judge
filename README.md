@@ -149,6 +149,7 @@
 | 362 | [Design Hit Counter](https://leetcode.com/problems/design-hit-counter/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/design-hit-counter.cpp) | Medium |
 | 364 | [Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/nested-list-weight-sum-ii.cpp) | Medium |
 | 366 | [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/find-leaves-of-binary-tree.cpp) | Medium |
+| 367 | [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/valid-perfect-square.cpp) | Medium |
 | 369 | [Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/plus-one-linked-list.cpp) | Medium |
 | 370 | [Range Addition](https://leetcode.com/problems/range-addition/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/range-addition.cpp) | Medium |
 | 371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/sum-of-two-integers.cpp) | Easy |
