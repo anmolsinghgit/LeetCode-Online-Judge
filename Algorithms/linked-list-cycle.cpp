@@ -11,7 +11,7 @@ struct ListNode {
 class Solution {
 public:
 	bool hasCycle(ListNode *head) {
-		if (!head || !head->next) return false;
+		if (!head) return false;
 		ListNode *slow = head, *fast = head;
 		while (fast && fast->next) {
 			slow = slow->next;
