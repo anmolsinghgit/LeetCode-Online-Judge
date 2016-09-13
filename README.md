@@ -75,6 +75,8 @@
 | 135 | [Candy](https://leetcode.com/problems/candy/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/candy.cpp) | Hard |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/single-number.cpp) | Easy |
 | 138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/copy-list-with-random-pointer.cpp) | Hard |
+| 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/linked-list-cycle.cpp) | Easy |
+| 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/linked-list-cycle-ii.cpp) | Medium |
 | 143 | [Reorder List](https://leetcode.com/problems/reorder-list/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/reorder-list.cpp) | Medium |
 | 147 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/insertion-sort-list.cpp) | Medium |
 | 148 | [Sort List](https://leetcode.com/problems/sort-list/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/sort-list.cpp) | Medium |
