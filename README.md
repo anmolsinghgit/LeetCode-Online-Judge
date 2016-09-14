@@ -118,6 +118,7 @@
 | 253 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/meeting-rooms-ii.cpp) | Medium |
 | 256 | [Paint House](https://leetcode.com/problems/paint-house/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/paint-house.cpp) | Medium |
 | 261 | [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/graph-valid-tree.cpp) | Medium |
+| 258 | [Add Digits](https://leetcode.com/problems/add-digits/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/add-digits.cpp) | Easy |
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/ugly-number.cpp) | Easy |
 | 264 | [Ugly Number II](https://leetcode.com/problems/ugly-number-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/ugly-number-ii.cpp) | Medium |
 | 265 | [Paint House II](https://leetcode.com/problems/paint-house-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/paint-house-ii.cpp) | Hard |
