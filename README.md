@@ -133,6 +133,7 @@
 | 305 | [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/number-of-islands-ii.cpp) | Hard |
 | 307 | [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/range-sum-query-mutable.cpp) | Medium |
 | 308 | [Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/range-sum-query-2d-mutable.cpp) | Hard |
+| 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/burst-balloons.cpp) | Medium |
 | 313 | [Super Ugly Number](https://leetcode.com/problems/super-ugly-number/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/super-ugly-number.cpp) | Medium |
 | 318 | [Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/maximum-product-of-word-lengths.cpp) | Medium |
 | 319 | [Bulb Switcher](https://leetcode.com/problems/bulb-switcher/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/bulb-switcher.cpp) | Medium |
