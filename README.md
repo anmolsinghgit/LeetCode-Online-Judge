@@ -125,6 +125,7 @@
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/missing-number.cpp) | Medium |
 | 281 | [Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/zigzag-iterator.cpp) | Medium |
 | 285 | [Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/inorder-successor-in-bst.cpp) | Medium |
+| 286 | [Walls and Gates](https://leetcode.com/problems/walls-and-gates/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/walls-and-gates.cpp) | Medium |
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/find-the-duplicate-number.cpp) | Hard |
 | 293 | [Flip Game](https://leetcode.com/problems/flip-game/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/flip-game.cpp) | Easy |
 | 294 | [Flip Game II](https://leetcode.com/problems/flip-game-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/flip-game-ii.cpp) | Medium |
