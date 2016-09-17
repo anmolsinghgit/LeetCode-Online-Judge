@@ -12,7 +12,6 @@ public:
 		int r = sqrt(n);
 		if (r * r == n) return 1;
 		vector<int> OPT(1 + n, 0);
-		for (int i = 1; i <= r; ++i) OPT[i * i] = 1;
 		for (int i = 1; i < n + 1; ++i) {
 			int r = sqrt(i);
 			if (r * r == i) OPT[i] = 1;
