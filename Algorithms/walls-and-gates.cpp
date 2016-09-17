@@ -1,5 +1,6 @@
 // 286. Walls and Gates
 // https://leetcode.com/problems/walls-and-gates/
+// https://leetcode.com/articles/walls-and-gates/#approach-2-breadth-first-search-accepted
 #include <iostream>
 #include <vector>
 #include <climits>
@@ -10,29 +11,22 @@ using namespace std;
 class Solution {
 public:
 	void wallsAndGates(vector<vector<int>>& rooms) {
-		for (size_t i = 0; i < rooms.size(); ++i) {
-			for (size_t j = 0; j < rooms.front().size(); ++j) {
+		vector<pair<int, int>> directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+		for (int i = 0; i < (int)rooms.size(); ++i) {
+			for (int j = 0; j < (int)rooms.front().size(); ++j) {
 				if (rooms[i][j] == 0) {
-					queue<pair<size_t, size_t>> q;
+					queue<pair<int, int>> q;
 					q.push(make_pair(i, j));
 					while (!q.empty()) {
-						pair<size_t, size_t> point = q.front();
-						if (point.first >= 1 && rooms[point.first - 1][point.second] > 0 && rooms[point.first - 1][point.second] > rooms[point.first][point.second] + 1) {
-							rooms[point.first - 1][point.second] = rooms[point.first][point.second] + 1;
-							q.push(make_pair(point.first - 1, point.second));
+						pair<int, int> point = q.front();
+						for (const auto &i : directions) {
+							int x = point.first + i.first, y = point.second + i.second;
+							if (x < 0 || x >= (int)rooms.size() || y < 0 || y >= (int)rooms.front().size()) continue;
+							if (rooms[x][y] > 0 && rooms[x][y] > rooms[point.first][point.second] + 1) {
+								rooms[x][y] = rooms[point.first][point.second] + 1;
+								q.push(make_pair(x, y));
+							}
 						}
-						if (point.first + 1 < rooms.size() && rooms[point.first + 1][point.second] > 0 && rooms[point.first + 1][point.second] > rooms[point.first][point.second] + 1) {
-							rooms[point.first + 1][point.second] = rooms[point.first][point.second] + 1;
-							q.push(make_pair(point.first + 1, point.second));							
-						}
-						if (point.second >= 1 && rooms[point.first][point.second - 1] > 0 && rooms[point.first][point.second - 1] > rooms[point.first][point.second] + 1) {
-							rooms[point.first][point.second - 1] = rooms[point.first][point.second] + 1;
-							q.push(make_pair(point.first, point.second - 1));
-						}
-						if (point.second + 1 < rooms.front().size() && rooms[point.first][point.second + 1] > 0 && rooms[point.first][point.second + 1] > rooms[point.first][point.second] + 1) {
-							rooms[point.first][point.second + 1] = rooms[point.first][point.second] + 1;
-							q.push(make_pair(point.first, point.second + 1));
-						}					
 						q.pop();
 					}
 				}
