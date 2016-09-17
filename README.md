@@ -136,6 +136,7 @@
 | 308 | [Range Sum Query 2D - Mutable](https://leetcode.com/problems/range-sum-query-2d-mutable/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/range-sum-query-2d-mutable.cpp) | Hard |
 | 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/burst-balloons.cpp) | Hard |
 | 313 | [Super Ugly Number](https://leetcode.com/problems/super-ugly-number/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/super-ugly-number.cpp) | Medium |
+| 317 | [Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/shortest-distance-from-all-buildings.cpp) | Hard |
 | 318 | [Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/maximum-product-of-word-lengths.cpp) | Medium |
 | 319 | [Bulb Switcher](https://leetcode.com/problems/bulb-switcher/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/bulb-switcher.cpp) | Medium |
 | 320 | [Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/generalized-abbreviation.cpp) | Medium |
