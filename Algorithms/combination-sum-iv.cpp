@@ -1,5 +1,6 @@
 // 377. Combination Sum IV
 // https://leetcode.com/problems/combination-sum-iv/
+// https://discuss.leetcode.com/topic/52186/my-3ms-java-dp-solution
 #include <iostream>
 #include <vector>
 #include <algorithm>
