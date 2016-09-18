@@ -4,37 +4,30 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <stack>
 using namespace std;
 class Solution {
 public:
 	int largestRectangleArea(vector<int>& heights) {
-		vector<int> stack;
-		int i = 0;
-		int resullt = 0;
 		heights.push_back(0);
-		while (i < heights.size()) {
-			if (stack.empty() || heights[i] > heights[stack.back()]) {
-				stack.push_back(i);
-				++i;
-			}
+		stack<int> s;
+		int result = 0;
+		for (int i = 0; i < (int)heights.size(); ) {
+			if (s.empty() || heights[i] > heights[s.top()])
+				s.push(i++);
 			else {
-				int top = stack.back();
-				stack.pop_back();
-				resullt = max(resullt, heights[top] * (stack.empty() ? i : i - stack.back() - 1));
+				int top = s.top();
+				s.pop();
+				result = max(result, heights[top] * (s.empty() ? i : (i - s.top() - 1)));
 			}
 		}
-		return resullt;
+		return result;
 	}
 };
 int main(void) {
 	Solution solution;
 	vector<int> heights = {2,1,5,6,2,3};
-	if (solution.largestRectangleArea(heights) == 10) {
-		cout << "\nPassed\n";
-	}
-	else {
-		cout << "\nError\n";
-		return 0;
-	}
+	cout << solution.largestRectangleArea(heights) << "\tPassed\n";
+	cout << "\nPassed All\n";
 	return 0;
 }
