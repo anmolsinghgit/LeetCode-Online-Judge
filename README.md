@@ -174,3 +174,4 @@
 | 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/is-subsequence.cpp) | Medium |
 | 396 | [Rotate Function](https://leetcode.com/problems/rotate-function/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/rotate-function.cpp) | Easy |
 | 397 | [Integer Replacement](https://leetcode.com/problems/integer-replacement/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/integer-replacement.cpp) | Easy |
+| 401 | [Binary Watch](https://leetcode.com/problems/binary-watch/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/binary-watch.cpp) | Easy |
