@@ -14,7 +14,8 @@ public:
 		for (int i = n - 1; i >= 0; --i) {
 			int tmp = 0;
 			for (int j = 1; i + j < n; ++j)
-				if (nums[i + j] > nums[i]) tmp = max(tmp, OPT[i + j]);
+				if (nums[i + j] > nums[i])
+					tmp = max(tmp, OPT[i + j]);
 			result = max(result, OPT[i] = (1 + tmp));
 		}
 		return result;
