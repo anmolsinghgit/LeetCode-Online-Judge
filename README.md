@@ -146,6 +146,7 @@
 | 319 | [Bulb Switcher](https://leetcode.com/problems/bulb-switcher/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/bulb-switcher.cpp) | Medium |
 | 320 | [Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/generalized-abbreviation.cpp) | Medium |
 | 323 | [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/number-of-connected-components-in-an-undirected-graph.cpp) | Medium |
+| 334 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/increasing-triplet-subsequence.cpp) | Medium |
 | 339 | [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/nested-list-weight-sum.cpp) | Easy | 
 | 342 | [Power of Four](https://leetcode.com/problems/power-of-four/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/power-of-four.cpp) | Easy |
 | 343 | [Integer Break](https://leetcode.com/problems/integer-break) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/integer-break.cpp) | Medium |
