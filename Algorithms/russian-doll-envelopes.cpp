@@ -1,5 +1,7 @@
 // 354. Russian Doll Envelopes
 // https://leetcode.com/problems/russian-doll-envelopes/
+// https://discuss.leetcode.com/topic/47469/java-nlogn-solution-with-explanation
+// http://www.cnblogs.com/grandyang/p/5568818.html
 #include <iostream>
 #include <vector>
 #include <utility>
@@ -9,22 +11,33 @@ using namespace std;
 class Solution {
 public:
 	int maxEnvelopes(vector<pair<int, int>>& envelopes) {
-		if (envelopes.empty()) return 0;
-		sort(begin(envelopes), end(envelopes));
-		const int n = envelopes.size();
-		vector<int> OPT(n, 0);
-		OPT[n - 1] = 1;
-		int result = 1;
-		for (int i = n - 2; i >= 0; --i) {
-			int tmp = 0;
-			for (int j = 1; i + j < n; ++j)
-				if (envelopes[i + j].first > envelopes[i].first && envelopes[i + j].second > envelopes[i].second)
-					tmp = max(tmp, OPT[i + j]);
-			result = max(result, (OPT[i] = tmp + 1));
+		sort(begin(envelopes), end(envelopes), [](const pair<int, int>& i, const pair<int, int>& j) {if (i.first == j.first) return i.second > j.second; return i.first < j.first;});
+		vector<int> result;
+		for (const auto &i : envelopes) {
+			vector<int>::iterator it = lower_bound(begin(result), end(result), i.second);
+			if (it == end(result)) result.push_back(i.second);
+			else *it = i.second;
 		}
-		return result;
+		return result.size();
 	}
 };
+// class Solution {
+// public:
+// 	int maxEnvelopes(vector<pair<int, int>>& envelopes) {
+// 		sort(begin(envelopes), end(envelopes));
+// 		const int n = envelopes.size();
+// 		vector<int> OPT(n + 1, 0);
+// 		int result = 0;
+// 		for (int i = n - 1; i >= 0; --i) {
+// 			int tmp = 0;
+// 			for (int j = 1; i + j < n; ++j)
+// 				if (envelopes[i + j].first > envelopes[i].first && envelopes[i + j].second > envelopes[i].second)
+// 					tmp = max(tmp, OPT[i + j]);
+// 			result = max(result, (OPT[i] = tmp + 1));
+// 		}
+// 		return result;
+// 	}
+// };
 int main(void) {
 	Solution solution;
 	vector<pair<int, int>> envelopes = {{5, 4}, {6, 4}, {6, 7}, {2, 3}};
