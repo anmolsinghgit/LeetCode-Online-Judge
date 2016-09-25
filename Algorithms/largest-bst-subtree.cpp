@@ -19,15 +19,15 @@ public:
 	}
 private:
 	bool isValidBST(TreeNode* root) {
-		TreeNode *predecessor = NULL;
-		return this->isValidBST(root, predecessor);
+		TreeNode *previous = NULL;
+		return this->isValidBST(root, previous);
 	}
-	bool isValidBST(TreeNode* root, TreeNode*& predecessor) {
+	bool isValidBST(TreeNode* root, TreeNode*& previous) {
 		if (!root) return true;
-		if (!this->isValidBST(root->left, predecessor)) return false;
-		if (predecessor && predecessor->val >= root->val) return false;
-		predecessor = root;
-		if (!this->isValidBST(root->right, predecessor)) return false;
+		if (!this->isValidBST(root->left, previous)) return false;
+		if (previous && previous->val >= root->val) return false;
+		previous = root;
+		if (!this->isValidBST(root->right, previous)) return false;
 		return true;
 	}
 	int countNodes(TreeNode* root) {
