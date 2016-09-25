@@ -37,16 +37,16 @@ struct TreeNode {
 class Solution {
 public:
 	bool isValidBST(TreeNode* root) {
-		TreeNode *predecessor = NULL;
-		return this->isValidBST(root, predecessor);
+		TreeNode *previous = NULL;
+		return this->isValidBST(root, previous);
 	}
 private:
-	bool isValidBST(TreeNode* root, TreeNode* &predecessor) {
+	bool isValidBST(TreeNode* root, TreeNode* &previous) {
 		if (!root) return true;
-		if (!this->isValidBST(root->left, predecessor)) return false;
-		if (predecessor && root->val <= predecessor->val) return false;
-		predecessor = root;
-		if (!this->isValidBST(root->right, predecessor)) return false;
+		if (!this->isValidBST(root->left, previous)) return false;
+		if (previous && root->val <= previous->val) return false;
+		previous = root;
+		if (!this->isValidBST(root->right, previous)) return false;
 		return true;
 	}
 };
