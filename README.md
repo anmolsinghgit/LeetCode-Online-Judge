@@ -186,4 +186,4 @@
 | 397 | [Integer Replacement](https://leetcode.com/problems/integer-replacement/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/integer-replacement.cpp) | Easy |
 | 400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/nth-digit.cpp) | Easy |
 | 401 | [Binary Watch](https://leetcode.com/problems/binary-watch/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/binary-watch.cpp) | Easy |
-| 404 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/sum-of-left-leaves/.cpp) | Easy |
+| 404 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/sum-of-left-leaves.cpp) | Easy |
