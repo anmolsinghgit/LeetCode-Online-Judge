@@ -1,77 +1,73 @@
 // 98. Validate Binary Search Tree
 // https://leetcode.com/problems/validate-binary-search-tree/
-// http://www.cnblogs.com/AnnieKim/archive/2013/06/15/morristraversal.html
-// https://discuss.leetcode.com/topic/17357/morris-traversal-o-1-space-no-recursion-o-n-time-with-explanation-java
 #include <iostream>
 using namespace std;
 struct TreeNode {
 	int val;
 	TreeNode *left;
 	TreeNode *right;
-	TreeNode(const int& x) : val(x), left(NULL), right(NULL) {}
+	TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
+// class Solution {
+// public:
+// 	bool isValidBST(TreeNode* root) {
+// 		TreeNode *previous = NULL;
+// 		while (root) {
+// 			if (!root->left) {
+// 				if (previous && previous->val >= root->val) return false;
+// 				previous = root;
+// 				root = root->right;
+// 				continue;
+// 			}
+// 			TreeNode *predecessor = root->left;
+// 			while (predecessor->right && predecessor->right != root) predecessor = predecessor->right;
+// 			if (!predecessor->right) {
+// 				predecessor->right = root;
+// 				root = root->left;
+// 				continue;
+// 			}
+// 			if (previous && previous->val >= root->val) return false;
+// 			predecessor->right = NULL;
+// 			previous = root;
+// 			root = root->right;
+// 		}
+// 		return true;
+// 	}
+// };
 class Solution {
 public:
 	bool isValidBST(TreeNode* root) {
-		if (!root) return true;
-		return this->isValidBST(root->left) && this->check(root) && this->isValidBST(root->right);
+		TreeNode *previous = NULL;
+		return this->isValidBST(root, previous);
 	}
 private:
-	bool check(TreeNode* root) {
-		if (!predecessor) {
-			predecessor = root;
-			return true;
-		}
-		if (predecessor->val >= root->val) return false;
-		predecessor = root;
+	bool isValidBST(TreeNode* root, TreeNode* &previous) {
+		if (!root) return true;
+		if (!this->isValidBST(root->left, previous)) return false;
+		if (previous && root->val <= previous->val) return false;
+		previous = root;
+		if (!this->isValidBST(root->right, previous)) return false;
 		return true;
 	}
-private:
-	TreeNode* predecessor = NULL;
 };
 int main(void) {
 	Solution solution;
-	TreeNode* root = new TreeNode(2);
+	TreeNode *root = new TreeNode(2);
 	root->left = new TreeNode(1);
 	root->right = new TreeNode(3);
-	if (solution.isValidBST(root)) {
-		cout << "\nPassed\n";
-	}
-	else {
-		cout << "\nError\n";
-		return 0;
-	}
-	root->val = 1;
-	root->left->val = 2;
-	root->right->val = 3;
-	if (!solution.isValidBST(root)) {
-		cout << "\nPassed\n";
-	}
-	else {
-		cout << "\nError\n";
-		return 0;
-	}
-	delete root->left;
-	root->left = NULL;
-	delete root->right;
-	root->right = NULL;
-	root->val = 2147483647;
-	if (solution.isValidBST(root)) {
-		cout << "\nPassed\n";
-	}
-	else {
-		cout << "\nError\n";
-		return 0;
-	}
-	root->val = 1;
+	cout << boolalpha << solution.isValidBST(root) << "\tPassed\n";
+	root = new TreeNode(1);
+	root->left = new TreeNode(2);
+	root->right = new TreeNode(3);
+	cout << boolalpha << solution.isValidBST(root) << "\tPassed\n";
+	root = new TreeNode(1);
 	root->left = new TreeNode(1);
-	if (!solution.isValidBST(root)) {
-		cout << "\nPassed\n";
-	}
-	else {
-		cout << "\nError\n";
-		return 0;
-	}
+	cout << boolalpha << solution.isValidBST(root) << "\tPassed\n";
+	root = new TreeNode(10);
+	root->left = new TreeNode(5);
+	root->right = new TreeNode(15);
+	root->right->left = new TreeNode(6);
+	root->right->right = new TreeNode(20);
+	cout << boolalpha << solution.isValidBST(root) << "\tPassed\n";
 	cout << "\nPassed All\n";
-	return 0;
 }
