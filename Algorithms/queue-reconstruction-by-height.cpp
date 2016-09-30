@@ -14,20 +14,8 @@ public:
 			return (i.first == j.first) ? i.second < j.second : i.first > j.first; 
 		});
 		vector<pair<int, int>> result;
-		pair<int, int> previous({-1, -1});
-		for (const auto &i : people) {
-			if (result.empty()) {
-				result.push_back(i);
-				previous = i;
-				continue;
-			}
-			if (previous.first == i.first) {
-				result.push_back(i);
-				previous = i;
-				continue;				
-			}
-			result.insert(begin(result) + i.second, i);
-		}
+		for (const auto &i : people)
+		    result.insert(begin(result) + i.second, i);
 		return result;
 	}
 };
