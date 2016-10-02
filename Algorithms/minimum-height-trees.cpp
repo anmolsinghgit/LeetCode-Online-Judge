@@ -8,6 +8,7 @@
 #include <unordered_map>
 #include <unordered_set>
 using namespace std;
+// BEGIN: https://discuss.leetcode.com/topic/30572/share-some-thoughts
 class Solution {
 public:
 	vector<int> findMinHeightTrees(int n, vector<pair<int, int>>& edges) {
@@ -35,6 +36,7 @@ public:
 		return result;
 	}
 };
+// END: https://discuss.leetcode.com/topic/30572/share-some-thoughts
 // BEGIN: Time Limit Exceeded
 // class Solution {
 // public:
