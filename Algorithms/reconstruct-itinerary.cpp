@@ -11,58 +11,58 @@
 #include <algorithm>
 #include <iterator>
 using namespace std;
-// BEGIN: https://www.hrwhisper.me/leetcode-reconstruct-itinerary/
+// BEGIN: https://discuss.leetcode.com/topic/36721/short-c-dfs-iterative-44ms-solution-with-explanation-no-recursive-calls-no-backtracking
 class Solution {
 public:
 	vector<string> findItinerary(vector<pair<string, string>> tickets) {
+		unordered_map<string, multiset<string>> graph;
+		for (const auto &i : tickets) graph[i.first].insert(i.second);
 		vector<string> result;
-		if (tickets.empty()) return result;
-		unordered_map<string, map<string, int>> graph;
-		for (const auto& i : tickets) graph[i.first][i.second]++;
-		result.push_back("JFK");
-		this->backTrack(tickets.size(), result, graph);
+		stack<string> stk;
+		stk.push("JFK");
+		while (!stk.empty()) {
+			string top = stk.top();
+			if (graph[top].empty()) {
+				result.push_back(top);
+				stk.pop();
+			}
+			else {
+				stk.push(*begin(graph[top]));
+				graph[top].erase(begin(graph[top]));
+			}
+		}
+		reverse(begin(result), end(result));
 		return result;
 	}
-private:
-	bool backTrack(const size_t lengthOftickets, vector<string>& result, unordered_map<string, map<string, int>>& graph) {
-		if (result.size() == (lengthOftickets + 1)) return true;
-		for (auto& i : graph[result.back()]) {
-			if (i.second == 0) continue;
-			i.second--;
-			result.push_back(i.first);
-			if (this->backTrack(lengthOftickets, result, graph)) return true;
-			i.second++;
-			result.pop_back();			
-		}
-		return false;
-	}
 };
-// END: https://www.hrwhisper.me/leetcode-reconstruct-itinerary/
-// BEGIN: https://discuss.leetcode.com/topic/36721/short-c-dfs-iterative-44ms-solution-with-explanation-no-recursive-calls-no-backtracking
+// END: https://discuss.leetcode.com/topic/36721/short-c-dfs-iterative-44ms-solution-with-explanation-no-recursive-calls-no-backtracking
+// BEGIN: https://www.hrwhisper.me/leetcode-reconstruct-itinerary/
 // class Solution {
 // public:
 // 	vector<string> findItinerary(vector<pair<string, string>> tickets) {
-// 		unordered_map<string, multiset<string>> graph;
-// 		for (const auto &i : tickets) graph[i.first].insert(i.second);
 // 		vector<string> result;
-// 		stack<string> stk;
-// 		stk.push("JFK");
-// 		while (!stk.empty()) {
-// 			string top = stk.top();
-// 			if (graph[top].empty()) {
-// 				result.push_back(top);
-// 				stk.pop();
-// 			}
-// 			else {
-// 				stk.push(*begin(graph[top]));
-// 				graph[top].erase(begin(graph[top]));
-// 			}
-// 		}
-// 		reverse(begin(result), end(result));
+// 		if (tickets.empty()) return result;
+// 		unordered_map<string, map<string, int>> graph;
+// 		for (const auto& i : tickets) graph[i.first][i.second]++;
+// 		result.push_back("JFK");
+// 		this->backTrack(tickets.size(), result, graph);
 // 		return result;
 // 	}
+// private:
+// 	bool backTrack(const size_t lengthOftickets, vector<string>& result, unordered_map<string, map<string, int>>& graph) {
+// 		if (result.size() == (lengthOftickets + 1)) return true;
+// 		for (auto& i : graph[result.back()]) {
+// 			if (i.second == 0) continue;
+// 			i.second--;
+// 			result.push_back(i.first);
+// 			if (this->backTrack(lengthOftickets, result, graph)) return true;
+// 			i.second++;
+// 			result.pop_back();			
+// 		}
+// 		return false;
+// 	}
 // };
-// END: https://discuss.leetcode.com/topic/36721/short-c-dfs-iterative-44ms-solution-with-explanation-no-recursive-calls-no-backtracking
+// END: https://www.hrwhisper.me/leetcode-reconstruct-itinerary/
 // BEGIN: Time Limit Exceeded
 // class Solution {
 // public:
