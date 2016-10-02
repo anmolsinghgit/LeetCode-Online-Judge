@@ -186,6 +186,7 @@
 | 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/is-subsequence.cpp) | Medium |
 | 396 | [Rotate Function](https://leetcode.com/problems/rotate-function/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/rotate-function.cpp) | Easy |
 | 397 | [Integer Replacement](https://leetcode.com/problems/integer-replacement/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/integer-replacement.cpp) | Easy |
+| 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/evaluate-division.cpp) | Medium |
 | 400 | [Nth Digit](https://leetcode.com/problems/nth-digit/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/nth-digit.cpp) | Easy |
 | 401 | [Binary Watch](https://leetcode.com/problems/binary-watch/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/binary-watch.cpp) | Easy |
 | 404 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/sum-of-left-leaves.cpp) | Easy |
