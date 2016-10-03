@@ -9,6 +9,7 @@
 #include <unordered_map>
 #include <unordered_set>
 using namespace std;
+// BEGIN: https://discuss.leetcode.com/topic/28308/java-ac-solution-using-bfs
 class Solution {
 public:
 	string alienOrder(vector<string>& words) {
@@ -37,6 +38,7 @@ public:
 		return indegrees.size() == result.size() ? result : "";
 	}
 };
+// END: https://discuss.leetcode.com/topic/28308/java-ac-solution-using-bfs
 int main(void) {
 	Solution solution;
 	vector<string> words = {"wrt","wrf","er","ett","rftt"};
