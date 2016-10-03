@@ -129,6 +129,7 @@
 | 264 | [Ugly Number II](https://leetcode.com/problems/ugly-number-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/ugly-number-ii.cpp) | Medium |
 | 265 | [Paint House II](https://leetcode.com/problems/paint-house-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/paint-house-ii.cpp) | Hard |
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/missing-number.cpp) | Medium |
+| 269 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/alien-dictionary.cpp) | Hard |
 | 279 | [Perfect Squares](https://leetcode.com/problems/perfect-squares/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/perfect-squares.cpp) | Medium |
 | 281 | [Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/zigzag-iterator.cpp) | Medium |
 | 285 | [Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/inorder-successor-in-bst.cpp) | Medium |
