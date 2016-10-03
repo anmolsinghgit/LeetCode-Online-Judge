@@ -34,7 +34,6 @@ public:
 			zeros.pop();
 			for (const auto &i : graph[front]) if (--indegrees[i] == 0) zeros.push(i);
 		}
-		cout << indegrees.size() << '\t' << result.size() << '\n';
 		return indegrees.size() == result.size() ? result : "";
 	}
 };
