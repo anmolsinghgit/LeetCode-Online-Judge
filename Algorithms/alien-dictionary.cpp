@@ -18,10 +18,12 @@ public:
 		unordered_map<char, int> indegrees;
 		for (const auto &i : words) for (const auto &j : i) indegrees[j] = 0;
 		for (size_t i = 1; i < words.size(); i++) {
-			if (words[i - 1].size() > words[i].size() && words[i - 1].substr(0, words[i].size()) == words[i]) return "";
 			size_t j = 0, k = min(words[i - 1].size(), words[i].size());
 			while (j < k && words[i - 1][j] == words[i][j]) j++;
-			if (j == k) continue;
+			if (j == k) {
+				if (words[i - 1].size() > words[i].size()) return "";
+				continue;
+			}
 			if (graph.count(words[i - 1][j]) && graph[words[i - 1][j]].count(words[i][j])) continue;
 			graph[words[i - 1][j]].insert(words[i][j]);
 			indegrees[words[i][j]]++;
