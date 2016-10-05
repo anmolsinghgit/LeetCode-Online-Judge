@@ -18,7 +18,7 @@ public:
 			if (abbr[i] >= '1' && abbr[i] <= '9') {
 				size_t k = i;
 				while (i < abbr.size() && abbr[i] >= '0' && abbr[i] <= '9') i++;
-				j += stoi(abbr.substr(k, i - k));
+				j += stoull(abbr.substr(k, i - k));
 				continue;
 			}
 			return false;
