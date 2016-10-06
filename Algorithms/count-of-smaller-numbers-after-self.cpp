@@ -10,8 +10,7 @@ public:
 	vector<int> countSmaller(vector<int>& nums) {
 		vector<int> result(nums.size(), 0);
 		vector<int> x;
-		const int n = nums.size();
-		for (int i = n - 1; i >= 0; i--) {
+		for (int i = nums.size() - 1; i >= 0; i--) {
 			vector<int>::iterator it = lower_bound(begin(x), end(x), nums[i]);
 			result[i] = it - begin(x);
 			x.insert(it, nums[i]);
