@@ -8,8 +8,7 @@ using namespace std;
 class Solution {
 public:
 	vector<int> countSmaller(vector<int>& nums) {
-		vector<int> result(nums.size(), 0);
-		vector<int> x;
+		vector<int> result(nums.size(), 0), x;
 		for (int i = nums.size() - 1; i >= 0; i--) {
 			vector<int>::iterator it = lower_bound(begin(x), end(x), nums[i]);
 			result[i] = it - begin(x);
