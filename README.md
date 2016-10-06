@@ -147,6 +147,7 @@
 | 310 | [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/minimum-height-trees.cpp) | Medium |
 | 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/burst-balloons.cpp) | Hard |
 | 313 | [Super Ugly Number](https://leetcode.com/problems/super-ugly-number/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/super-ugly-number.cpp) | Medium |
+| 315 | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/count-of-smaller-numbers-after-self.cpp) | Hard |
 | 317 | [Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/shortest-distance-from-all-buildings.cpp) | Hard |
 | 318 | [Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/maximum-product-of-word-lengths.cpp) | Medium |
 | 319 | [Bulb Switcher](https://leetcode.com/problems/bulb-switcher/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/bulb-switcher.cpp) | Medium |
