@@ -121,6 +121,7 @@
 | 230 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/kth-smallest-element-in-a-bst.cpp) | Medium |
 | 231 | [Power of Two](https://leetcode.com/problems/power-of-two/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/power-of-two.cpp) | Easy |
 | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/product-of-array-except-self.cpp) | Medium |
+| 241 | [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/different-ways-to-add-parentheses.cpp) | Medium |
 | 253 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/meeting-rooms-ii.cpp) | Medium |
 | 256 | [Paint House](https://leetcode.com/problems/paint-house/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/paint-house.cpp) | Medium |
 | 261 | [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/graph-valid-tree.cpp) | Medium |
