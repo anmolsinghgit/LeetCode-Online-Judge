@@ -189,6 +189,7 @@
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/first-unique-character-in-a-string.cpp) | Easy |
 | 389 | [Find the Difference](https://leetcode.com/problems/find-the-difference/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/find-the-difference.cpp) | Easy |
 | 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/is-subsequence.cpp) | Medium |
+| 394 | [Decode String](https://leetcode.com/problems/decode-string/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/decode-string.cpp) | Medium |
 | 396 | [Rotate Function](https://leetcode.com/problems/rotate-function/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/rotate-function.cpp) | Easy |
 | 397 | [Integer Replacement](https://leetcode.com/problems/integer-replacement/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/integer-replacement.cpp) | Easy |
 | 399 | [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/evaluate-division.cpp) | Medium |
