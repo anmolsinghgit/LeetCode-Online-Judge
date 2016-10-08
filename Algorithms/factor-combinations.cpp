@@ -32,6 +32,7 @@ private:
 			path.pop_back();
 		}		
 	}
+// BEGIN: https://en.wikipedia.org/wiki/Primality_test
 	bool isPrime(int n) {
 		if (n == 1) return false;
 		if (n % 2 == 0) return false;
@@ -44,7 +45,8 @@ private:
 		size_t r = n;
 		while (r * r > (size_t)n) r = (r + n / r) / 2;
 		return (int)r;
-	} 
+	}
+// END: https://en.wikipedia.org/wiki/Primality_test
 };
 int main(void) {
 	Solution solution;
