@@ -3,15 +3,16 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+// BEGIN: http://www.cnblogs.com/AnnieKim/archive/2013/04/18/3028607.html
 class Solution {
 public:
 	int mySqrt(int x) {
 		size_t r = x;
-		while (r * r > (size_t)x)
-			r = (r + x / r) / 2;
-		return r;
+		while (r * r > (size_t)x) r = (r + x / r) / 2;
+		return (int) r; 
 	}
 };
+// END: http://www.cnblogs.com/AnnieKim/archive/2013/04/18/3028607.html
 // class Solution {
 // public:
 // 	int mySqrt(const int& x) {
