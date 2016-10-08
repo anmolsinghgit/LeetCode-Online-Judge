@@ -124,6 +124,7 @@
 | 241 | [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/different-ways-to-add-parentheses.cpp) | Medium |
 | 250 | [Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/count-univalue-subtrees.cpp) | Medium |
 | 253 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/meeting-rooms-ii.cpp) | Medium |
+| 254 | [Factor Combinations](https://leetcode.com/problems/factor-combinations/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/factor-combinations.cpp) | Medium |
 | 256 | [Paint House](https://leetcode.com/problems/paint-house/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/paint-house.cpp) | Medium |
 | 261 | [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/graph-valid-tree.cpp) | Medium |
 | 258 | [Add Digits](https://leetcode.com/problems/add-digits/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/add-digits.cpp) | Easy |
