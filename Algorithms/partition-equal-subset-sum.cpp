@@ -12,9 +12,10 @@ public:
 		const int sum = accumulate(begin(nums), end(nums), 0);
 		const int n = nums.size();
 		if (sum & 1) return false;
-		vector<bool> OPT(1 + sum / 2, false);
+		int target = sum >> 1;
+		vector<bool> OPT(1 + target, false);
 		OPT[0] = true;
-		for (int i = 1; i < 1 + sum / 2; i++)
+		for (int i = 1; i < 1 + target; i++)
 			for (int j = 0; j < n; j++)
 				if (nums[j] <= i)
 					OPT[i] = OPT[i] || OPT[i - nums[j]];
