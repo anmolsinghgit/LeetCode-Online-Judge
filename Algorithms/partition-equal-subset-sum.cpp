@@ -9,7 +9,6 @@ using namespace std;
 class Solution {
 public:
 	bool canPartition(vector<int>& nums) {
-		if (nums.empty()) return false;
 		int sum = accumulate(begin(nums), end(nums), 0);
 		if (sum & 1) return false;
 		for (size_t i = 1; i <= nums.size() / 2; i++) {
