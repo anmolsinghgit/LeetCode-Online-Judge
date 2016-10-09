@@ -17,8 +17,7 @@ public:
 		OPT[0] = true;
 		for (int i = 1; i < 1 + target; i++)
 			for (int j = 0; j < n; j++)
-				if (nums[j] <= i)
-					OPT[i] = OPT[i] || OPT[i - nums[j]];
+				OPT[i] = OPT[i] || (nums[j] <= i && OPT[i - nums[j]]);
 		return OPT[sum / 2];
 	}
 };
