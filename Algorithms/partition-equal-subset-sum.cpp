@@ -10,8 +10,6 @@ class Solution {
 public:
 	bool canPartition(vector<int>& nums) {
 		if (nums.empty()) return false;
-		if (nums.size() == 1) return nums[0] == 0;
-		if (nums.size() == 2) return nums[0] == nums[1];
 		int sum = accumulate(begin(nums), end(nums), 0);
 		if (sum & 1) return false;
 		for (size_t i = 1; i <= nums.size() / 2; i++) {
