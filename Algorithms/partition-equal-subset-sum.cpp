@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <iterator>
 using namespace std;
+// BEGIN: https://discuss.leetcode.com/topic/62271/c-solution-with-dynamic-programming
 class Solution {
 public:
 	bool canPartition(vector<int>& nums) {
@@ -24,6 +25,7 @@ public:
 		return false;
 	}
 };
+// END: https://discuss.leetcode.com/topic/62271/c-solution-with-dynamic-programming
 int main(void) {
 	Solution solution;
 	vector<int> nums;
