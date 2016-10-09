@@ -10,19 +10,31 @@ using namespace std;
 class Solution {
 public:
 	bool verifyPreorder(vector<int>& preorder) {
-		vector<int> stack;
-		int minVal = INT_MIN;
+		int minVal = INT_MIN, top = -1;
 		for (const auto &i : preorder) {
 			if (i < minVal) return false;
-			while (!stack.empty() && stack.back() < i) {
-				minVal = stack.back();
-				stack.pop_back();
-			}
-			stack.push_back(i);
+			while (top >= 0 && preorder[top] < i) minVal = preorder[top--];
+			preorder[++top] = i;
 		}
 		return true;
 	}
 };
+// class Solution {
+// public:
+// 	bool verifyPreorder(vector<int>& preorder) {
+// 		vector<int> stack;
+// 		int minVal = INT_MIN;
+// 		for (const auto &i : preorder) {
+// 			if (i < minVal) return false;
+// 			while (!stack.empty() && stack.back() < i) {
+// 				minVal = stack.back();
+// 				stack.pop_back();
+// 			}
+// 			stack.push_back(i);
+// 		}
+// 		return true;
+// 	}
+// };
 // END: https://discuss.leetcode.com/topic/21217/java-o-n-and-o-1-extra-space
 // END: http://www.cnblogs.com/grandyang/p/5327635.html
 // BEGIN: Time Limit Exceeded
