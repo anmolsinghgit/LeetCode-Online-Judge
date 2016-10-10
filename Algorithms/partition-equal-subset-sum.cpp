@@ -30,7 +30,7 @@ public:
 // 			for (size_t j = 0; j < i; j++) {
 // 				for (size_t k = j; k < nums.size(); k++) {
 // 					swap(nums[j], nums[k]);
-// 					if (2 * accumulate(begin(nums), begin(nums) + i, 0) == sum) return true;
+// 					if (accumulate(begin(nums), begin(nums) + i, 0) == sum / 2) return true;
 // 				}
 // 			}
 // 		}
