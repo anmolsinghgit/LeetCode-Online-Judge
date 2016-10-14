@@ -5,92 +5,11 @@
 #include <algorithm>
 using namespace std;
 // BEGIN: http://www.cnblogs.com/grandyang/p/5599289.html
-// BEGIN: SUBMISSION
-// class Solution {
-// public:
-// 	int maxKilledEnemies(vector<vector<char>>& grid) {
-// 		int result = 0;
-// 		const int m = grid.size(), n = m ? grid.front().size() : 0;
-// 		if (m == 0 || n == 0) return result;
-// 		vector<vector<int>> left(m, vector<int>(n, 0)), right(left), top(left), bottom(left);
-// 		for (int i = 0; i < m; i++) {
-// 			int sum = 0;
-// 			for (int j = 0; j < n; j++) {
-// 				if (grid[i][j] == 'W') {
-// 					sum = 0;
-// 					continue;
-// 				}
-// 				if (grid[i][j] == 'E') {
-// 					++sum;
-// 					continue;
-// 				}
-// 				if (grid[i][j] == '0') {
-// 					left[i][j] = sum;
-// 					continue;
-// 				}
-// 			}		
-// 		}
-// 		for (int i = 0; i < m; i++) {
-// 			int sum = 0;
-// 			for (int j = n - 1; j >= 0; j--) {
-// 				if (grid[i][j] == 'W') {
-// 					sum = 0;
-// 					continue;
-// 				}
-// 				if (grid[i][j] == 'E') {
-// 					++sum;
-// 					continue;
-// 				}
-// 				if (grid[i][j] == '0') {
-// 					right[i][j] = sum;
-// 					continue;
-// 				}
-// 			}		
-// 		}
-// 		for (int j = 0; j < n; j++) {
-// 			int sum = 0;
-// 			for (int i = 0; i < m; i++) {
-// 				if (grid[i][j] == 'W') {
-// 					sum = 0;
-// 					continue;
-// 				}
-// 				if (grid[i][j] == 'E') {
-// 					++sum;
-// 					continue;
-// 				}
-// 				if (grid[i][j] == '0') {
-// 					top[i][j] = sum;
-// 					continue;
-// 				}			
-// 			}
-// 		}
-// 		for (int j = 0; j < n; j++) {
-// 			int sum = 0;
-// 			for (int i = m - 1; i >= 0; i--) {
-// 				if (grid[i][j] == 'W') {
-// 					sum = 0;
-// 					continue;
-// 				}
-// 				if (grid[i][j] == 'E') {
-// 					++sum;
-// 					continue;
-// 				}
-// 				if (grid[i][j] == '0') {
-// 					bottom[i][j] = sum;
-// 					continue;
-// 				}			
-// 			}
-// 		}
-// 		for (int i = 0; i < m; i++)
-// 			for (int j = 0; j < n; j++)
-// 				if (grid[i][j] == '0')
-// 					result = max(result, left[i][j] + right[i][j] + top[i][j] + bottom[i][j]);
-// 		return result;
-// 	}
-// };
-// END: SUBMISSION
 class Solution {
 public:
+	// BEGIN: SUBMISSION
+	// int maxKilledEnemies(vector<vector<char>>& grid) {
+	// END: SUBMISSION
 	int maxKilledEnemies(vector<string>& grid) {
 		int result = 0;
 		const int m = grid.size(), n = m ? grid.front().size() : 0;
