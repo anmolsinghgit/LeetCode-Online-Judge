@@ -29,7 +29,7 @@ private:
 	size_t x;
 	size_t y;
 	size_t n;
-	vector<vector<int>> vec2d;
+	const vector<vector<int>>& vec2d;
 };
 
 /**
