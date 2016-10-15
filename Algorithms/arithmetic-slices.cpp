@@ -2,32 +2,66 @@
 // https://leetcode.com/problems/arithmetic-slices/
 #include <iostream>
 #include <vector>
+#include <climits>
 using namespace std;
 class Solution {
 public:
 	int numberOfArithmeticSlices(vector<int>& A) {
-		const int n = A.size();
+		int n = A.size();
 		if (n < 3) return 0;
 		int result = 0;
-		for (int i = 0; i + 3 < n + 1; i++) {
-			vector<int> OPT(n + 1, 0);
-			int difference = A[i + 1] - A[i];
-			for (int j = 3; i + j < n + 1; j++) {
-				int x = A[i + j - 1] - A[i + j - 2];
-				if (x != difference) break;
-				if (j == 3) {
-					OPT[j] = 1;
-					result++;
-					continue;
-				}
-				if (OPT[j - 1] == 0) break;
-				OPT[j] = OPT[j - 1] + 1;
-				result++;
-			}
+		for (int i = 1, len = 1, previous = INT_MAX, current = INT_MAX; i < n; i++, previous = current) {
+			current = A[i] - A[i - 1];
+			if (current == previous) result += len++;
+			else len = 1;
 		}
 		return result;
 	}
 };
+// BEGIN: https://discuss.leetcode.com/topic/62162/3ms-question-maker-solution-in-cpp-o-n-time-and-in-space
+// BEGIN: http://bookshadow.com/weblog/2016/10/09/leetcode-arithmetic-slices/
+// class Solution {
+// public:
+// 	int numberOfArithmeticSlices(vector<int>& A) {
+// 		int n = A.size();
+// 		if (n < 3) return 0;
+// 		int result = 0;
+// 		for (int i = 0; i + 1 < n; i++) A[i] = A[i + 1] - A[i];
+// 		A.resize(--n);
+// 		for (int i = 1, len = 1; i < n; i++) {
+// 			if (A[i - 1] == A[i]) result += len++;
+// 			else len = 1;
+// 		}
+// 		return result;
+// 	}
+// };
+// END: http://bookshadow.com/weblog/2016/10/09/leetcode-arithmetic-slices/
+// END: https://discuss.leetcode.com/topic/62162/3ms-question-maker-solution-in-cpp-o-n-time-and-in-space
+// class Solution {
+// public:
+// 	int numberOfArithmeticSlices(vector<int>& A) {
+// 		const int n = A.size();
+// 		if (n < 3) return 0;
+// 		int result = 0;
+// 		for (int i = 0; i + 3 < n + 1; i++) {
+// 			vector<int> OPT(n + 1, 0);
+// 			int difference = A[i + 1] - A[i];
+// 			for (int j = 3; i + j < n + 1; j++) {
+// 				int x = A[i + j - 1] - A[i + j - 2];
+// 				if (x != difference) break;
+// 				if (j == 3) {
+// 					OPT[j] = 1;
+// 					result++;
+// 					continue;
+// 				}
+// 				if (OPT[j - 1] == 0) break;
+// 				OPT[j] = OPT[j - 1] + 1;
+// 				result++;
+// 			}
+// 		}
+// 		return result;
+// 	}
+// };
 // BEGIN: Memory Limit Exceeded
 // class Solution {
 // public:
