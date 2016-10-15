@@ -19,6 +19,11 @@ public:
 	}
 };
 int main(void) {
+	Solution solution;
+	vector<int> nums = {1, 2, 2, 5, 3, 5};
+	cout << solution.thirdMax(nums) << "\tPassed\n";
+	nums = {-2147483648, 1, 2};
+	cout << solution.thirdMax(nums) << "\tPassed\n";
 	cout << "\nPassed All\n";
 	return 0;
 }
