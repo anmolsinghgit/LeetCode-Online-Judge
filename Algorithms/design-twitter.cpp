@@ -61,10 +61,9 @@ public:
 		if (followerId == followeeId) return;
 		if (!this->A[followeeId].count(followerId)) return;
 		this->A[followeeId].erase(followerId);
-		for (auto &i : this->B[followerId]) {
-			if (i.userId != followeeId || i.userId == followerId) continue;
-			i.tweetId = INT_MIN;
-		}
+		for (auto &i : this->B[followerId])
+			if (i.userId == followeeId)
+				i.tweetId = INT_MIN;
 		this->timeStamp++;
 	}
 private:
