@@ -176,6 +176,7 @@
 | 350 | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/intersection-of-two-arrays-ii.cpp) | Easy |
 | 351 | [Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/android-unlock-patterns.cpp) | Medium |
 | 354 | [Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/russian-doll-envelopes.cpp) | Hard |
+| 355 | [Design Twitter](https://leetcode.com/problems/design-twitter/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/design-twitter.cpp) | Medium |
 | 356 | [Line Reflection](https://leetcode.com/problems/line-reflection/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/line-reflection.cpp) | Medium |
 | 357 | [Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/count-numbers-with-unique-digits.cpp) | Medium |
 | 359 | [Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/) | [CPlusPlus](https://github.com/yuanhui-yang/LeetCode-Online-Judge/blob/master/Algorithms/logger-rate-limiter.cpp) | Easy |
